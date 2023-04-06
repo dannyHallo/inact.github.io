@@ -19,7 +19,6 @@
   padding-right: 6vh;
   align-items: center;
 
-  color: black;
   background-color: white;
 }
 
@@ -45,8 +44,16 @@
 #navbar #navTitle {
   font-size: 3.5vh;
   font-weight: bold;
+  color: black;
   text-shadow: 2px 2px #ff7272;
   margin-left: 2vw;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#navbar #navTitle:hover{
+  color: #ff7272;
+  text-shadow: 2px 2px black;
 }
 
 #navbar #navRightContainer {
