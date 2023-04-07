@@ -51,7 +51,7 @@
   text-decoration: none;
 }
 
-#navbar #navTitle:hover{
+#navbar #navTitle:hover {
   color: #ff7272;
   text-shadow: 2px 2px black;
 }
@@ -72,8 +72,9 @@
 #navbar nav li a {
   color: #3f3f3f;
   transition: all 0.1s ease;
-  text-decoration: none;
   font-size: 2vh;
+  text-decoration: none !important;
+  font-weight: normal !important;
 }
 
 #navbar nav li a:hover {

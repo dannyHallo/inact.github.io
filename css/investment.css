@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 #content {
@@ -13,6 +12,7 @@
   width: auto;
 
   background-color: #ffd966;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #content #parallax-header {
