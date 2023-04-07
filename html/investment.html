@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scenery</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/investment.css" />
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../resources/js/bootstrap.bundle.js"></script>
+    <script src="../resources/js/jquery.min.js"></script>
+    <script src="../resources/js/wow.js"></script>
+
+    <title>Investment</title>
+  </head>
+  <body>
+    <div id="navbar">
+        <div id="navMainPart">
+          <div id="navLeftContainer">
+            <img id="navIco" src="../imgs/icon/icon_yellow.png" />
+            <a id="navTitle" href="../index.html">LiJiang</a>
+          </div>
+  
+          <div id="navRightContainer">
+            <nav>
+              <li>
+                <a href="mspot.html">Spots</a>
+              </li>
+              <li>
+                <a href="scenery.html">Sceneries</a>
+              </li>
+              <li>
+                <a href="investment.html">Investment</a>
+              </li>
+              <li>
+                <a href="food.html">Foods</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+        <div id="navUnderline"></div>
+      </div>
+
+    <script lang="javascript">
+      let url = window.location.pathname;
+      url = url.substring(url.lastIndexOf('/') + 1, url.length - 5);
+      document.getElementById(url).style.fontWeight = 'bold'
+      document.getElementById(url).style.textDecorationLine = 'underline'
+      function reveal() {
+          var reveals = document.querySelectorAll(".reveal");
+
+          for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+
+              if (elementTop < windowHeight - elementVisible) {
+                  reveals[i].classList.add("active");
+              } else {
+                  reveals[i].classList.remove("active");
+              }
+          }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
+
+    <div id="content">
+      <div id="parallax-header">
+        <p id="title">
+          Discover the Opportunities of Lijiang's Growing Economy
+        </p>
+      </div>
+
+      <div id="banner1">
+        <p id="bannerTitle">
+          Lijiang offers favorable investment opportunities
+        </p>
+        <p id="bannerText">
+          Lijiang offers investors a range of advantages, including a strategic
+          location, a well-developed infrastructure, and a growing economy. The
+          city is situated in a key location in Southwest China, with easy
+          access to major transportation hubs and trade routes. It boasts a
+          modern and efficient transportation network, including an
+          international airport and high-speed railway lines. Lijiang's economy
+          is also on the rise, with a strong focus on tourism, agriculture, and
+          high-tech industries. The local government has implemented favorable
+          policies to encourage investment and entrepreneurship, making it an
+          attractive destination for both domestic and foreign investors. With
+          its favorable location, infrastructure, and economic prospects,
+          Lijiang presents a promising investment opportunity for those seeking
+          to tap into China's growing market.
+        </p>
+        <button class="showMore">Show me more</button>
+      </div>
+    </div>
+
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Fantastic natural environment</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              As the only city in China with three world heritages, Lijiang
+              regards its tourism industry as the pride of the city. Located at
+              the junction of the Yunnan-Guizhou Plateau and Qinghai Tibet
+              Plateau, adjacent to Jinsha River, the tributary of Yangtze River,
+              the unique natural environment has provided Lijiang with rich
+              tourism resources. Being one of the most renowned tourism cities
+              in China, Lijiang always provides generous returns to tourism
+              industry investors.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/investment/water.jpg"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/investment/field.jpg"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Ecological agriculture</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              Located at the Yunnan-Guizhou Plateau with traditional subtropical
+              monsoon climate, the geographical environment determines the
+              possible varieties of agricultural products in Lijiang. Dense
+              river network makes traditional agriculture in Lijiang
+              concentrated on fishing and aquaculture. By utilizing sufficient
+              sunlight conditions, Lijiang vigorously develops ecological
+              agriculture centered around fruits, medicinal herbs and flowers.
+              In the past three years, the total output value of Lijiang's
+              primary industry has increased by over 8% annually.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Green industry</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              As a city with a thriving tourism industry, protecting the
+              ecological environment is crucial. Different from traditional high
+              energy consumption and high pollution industries, Lijiang is
+              building a green industrial system that meets the local ecological
+              and environmental needs. This green industrial system mainly
+              involves clean energy, digital industries, biopharmaceutical
+              processing, and agricultural product processing, contributing
+              greatly to the economic growth of Lijiang.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/investment/industry.png"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/investment/bar.jpg"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Prosperous tourism industry</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              With its beautiful natural landscape and colorful cultural
+              environment, Lijiang has become one of the earliest cities in
+              China to develop tourism industry. Correspondingly, the tourism
+              industry has also changed the culture of Lijiang, natural
+              landscape attracts young people who are tired of urban life, and
+              the demand of young people has led to an increase in the number of
+              bars, as well as many musicians seeking to sing in bars, including
+              one of the most famous singer -- Zhao Lei. Now Bars and singers
+              have bacome a cultural landscape of this city, providing a large
+              amount of potential growth space for the tourism industry in
+              Lijiang。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">
+              Healthy industrial structure and sustainable development
+              expectations
+            </h2>
+            <p class="lead fw-normal text-muted mb-0">
+              Based on data published by the Lijiang Municipal Bureau of
+              Statistics, even in the face of the severe economic situation in
+              2022, Lijiang's total economic output still maintains positive
+              growth. The primary and secondary industries increased by 5.4% and
+              14% respectively year-on-year, and the contribution rate of
+              manufacturing and clean energy to industrial added value exceeds
+              90%. With the lifting of epidemic prevention and control policies,
+              the operating revenue of Lijiang's tourism industry has also been
+              continuously improving. Healthy industrial system ensures the vast
+              economic development potential of Lijiang.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/investment/night.png"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-light py-5">
+      <div class="container px-4 px-lg-5">
+        <div class="small text-center text-muted">coursework-2023</div>
+      </div>
+    </footer>
+    <div id="article">
+      <a id="back_top"><span>⌆</span></a>
+    </div>
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          //只要窗口滚动,就触发下面代码
+          var scrollt =
+            document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+          if (scrollt > 100) {
+            //判断滚动后高度超过100px,就显示
+            $("#back_top").fadeIn(400); //淡出
+          } else {
+            $("#back_top").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+          }
+        });
+        $("#back_top").click(function () {
+          //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+          $("html,body").animate({ scrollTop: "0px" }, 200);
+        });
+      });
+      let localComments = JSON.parse(window.localStorage.comment ?? "[]");
+      function formatDate(time, format = "YY-MM-DD hh:mm:ss") {
+        var date = new Date(time);
+
+        var year = date.getFullYear(),
+          month = date.getMonth() + 1, //月份是从0开始的
+          day = date.getDate(),
+          hour = date.getHours(),
+          min = date.getMinutes(),
+          sec = date.getSeconds();
+        var preArr = Array.apply(null, Array(10)).map(function (elem, index) {
+          return "0" + index;
+        });
+
+        var newTime = format
+          .replace(/YY/g, year)
+          .replace(/MM/g, preArr[month] || month)
+          .replace(/DD/g, preArr[day] || day)
+          .replace(/hh/g, preArr[hour] || hour)
+          .replace(/mm/g, preArr[min] || min)
+          .replace(/ss/g, preArr[sec] || sec);
+
+        return newTime;
+      }
+      function setComments() {
+        const msgs = $("#msgs");
+        msgs.empty();
+        localComments.forEach((element) => {
+          const emailAddr = element.emailAddr;
+          const text = element.text;
+          const time = formatDate(element.time);
+          msgs.append(`<div class="card w-50" style="margin: 0.5rem">
+                            <div class="card-header">
+                                ${emailAddr}
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">${text}</p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <div style="text-align: right;">${time}</div>
+                            </div>
+                        </div>`);
+        });
+      }
+      setComments();
+      function submitCmt() {
+        const email = $("#email").val();
+        const msg = $("#message").val();
+        if (!email || !msg) {
+          new bootstrap.Toast(document.getElementById("liveToast")).show();
+        } else {
+          localComments.push({ emailAddr: email, text: msg, time: Date.now() });
+          window.localStorage.setItem("comment", JSON.stringify(localComments));
+          setComments();
+        }
+      }
+    </script>
+  </body>
+</html>

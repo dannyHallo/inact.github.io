@@ -9,21 +9,70 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.header {
-  width: 100%;
-  overflow: hidden;
-  background-color: #ffe2b8;
-  /* height: 1010px; */
-  height: 70.14vw;
+#content {
+  height: auto;
+  width: auto;
+
+  background-color: #ffd966;
 }
 
-.header img {
-  /* margin-top: 160px; */
-  margin-top: 11.11vw;
+#content #parallax-header {
+  height: 93vh;
   width: 100%;
-  /* height: 600px; */
-  height: 41.66vw;
-  overflow: hidden;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+  background-image: url(../imgs/mspot/m1.jpg);
+
+  background-position: center;
+  background-size: cover;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#content #parallax-header #title {
+  font-size: 8vw;
+  color: rgb(255, 164, 246);
+  text-shadow: 0.3vw 0.3vw #181918;
+  font-family: "Satisfy", cursive !important;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#content #banner1 {
+  height: auto;
+  width: 100%;
+
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content #banner1 #bannerTitle {
+  font-size: 4vw;
+  font: bold;
+  color: #74b9ff;
+  text-shadow: 2px 2px #cd7cff;
+
+  padding-bottom: 40px;
+}
+
+#content #banner1 #bannerText {
+  height: auto;
+  width: 85%;
+  font-size: 1vw;
+  line-height: 2vw;
+  text-align: center;
+  margin-bottom: 5vw;
 }
 
 .header h1 {
@@ -123,4 +172,27 @@
 
 .footer p a:hover {
   text-decoration: underline;
+}
+
+.showMore {
+  height: 4vw;
+  width: 20vw;
+
+  font-size: 2vw;
+  color: #ffffff;
+  background-color: #b019b8;
+
+  border-color: #000000;
+  border-width: 0.1vw;
+  border-radius: 2vw;
+
+  box-shadow: 0.2vw 0.3vw 0 0 #e062e7;
+  /* border-style: solid; */
+
+  transition: all 0.6s ease;
+}
+
+.showMore:hover {
+  color: #b019b8;
+  background-color: #ffffff;
 }
