@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width"
+    />
+    <title>英文、中英文地图</title>
+    <link
+      rel="stylesheet"
+      href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"
+    />
+    <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=9f06974e83fad96b597b9ebdbd7a4b3a"></script>
+
+    <style>
+      html,
+      body,
+      #container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <script>
+      var markers = new Array();
+      var currentMarker;
+      
+      var markerLijiang = new AMap.Marker({
+        icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_r.png",
+        position: [100.225825, 26.85517],
+      });
+
+      // hutiao
+      markers[0] = new AMap.Marker({
+        icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+        position: [100.114031, 27.188919],
+      });
+
+      // heilongtan
+      markers[1] = new AMap.Marker({
+        icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+        position: [100.239712, 26.888369],
+      });
+
+      // mufu
+      markers[2] = new AMap.Marker({
+        icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+        position: [100.235477, 26.870554],
+      });
+
+      // lanyuegu
+      markers[3] = new AMap.Marker({
+        icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+        position: [100.210443, 27.129508],
+      });
+
+      //初始化地图
+      var map = new AMap.Map("container", {
+        zoom: 11,
+        center: [100.225825, 26.85517],
+        lang: "en", //en，zh_en, zh_cn
+      });
+
+      map.add(markerLijiang);
+      var bounds = map.getBounds();
+      showToolBarRuler();
+      function changeFocus(id) {
+        // delete the current cursor
+        if (currentMarker != null) {
+          map.remove(currentMarker);
+          currentMarker = null;
+        }
+        currentMarker = markers[id];
+        map.add(currentMarker);
+        map.setFitView();
+      }
+    </script>
+  </body>
+</html>

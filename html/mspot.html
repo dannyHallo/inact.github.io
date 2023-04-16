@@ -1,179 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Spots</title>
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/mspot.css" />
-  </head>
-  <body>
-    <div id="navbar">
-      <div id="navMainPart">
-        <div id="navLeftContainer">
-          <img id="navIco" src="../imgs/icon/icon_yellow.png" />
-          <a id="navTitle" href="../index.html">LiJiang</a>
-        </div> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div id="navRightContainer">
-          <nav>
-            <li>
-              <a href="mspot.html">Spots</a>
-            </li>
-            <li>
-              <a href="scenery.html">Sceneries</a>
-            </li>
-            <li>
-              <a href="investment.html">Investment</a>
-            </li>
-            <li>
-              <a href="food.html">Foods</a>
-            </li>
-          </nav>
-        </div>
-      </div>
-      <div id="navUnderline"></div>
-    </div>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/mspot.css">
+        <link rel="stylesheet" href="../css/nav.css" />
 
-    <div id="content">
-      <div id="parallax-header">
-        <p id="title">Exploring the City's Most Famous Spots</p>
-      </div>
+        <link rel="stylesheet" href="../css/mainpage.css" />
 
-      <div id="banner1">
-        <p id="bannerTitle">Discover Lijiang's Hidden Gems</p>
-        <p id="bannerText">
-          This webpage will take you on a journey through Lijiang's most famous
-          spots, revealing the city's hidden gems and must-see attractions. From
-          the stunning scenery of Jade Dragon Snow Mountain to the historic
-          architecture of Lijiang Ancient Town, this guide will showcase the
-          best of Lijiang's cultural and natural wonders. Discover the vibrant
-          culture of the Naxi people at Baisha Village, take a leisurely stroll
-          along the picturesque Black Dragon Pool, or explore the ancient Mu
-          Palace. With so many fascinating places to visit, Lijiang's famous
-          spots offer something for everyone, whether you're a history buff,
-          nature lover, or culture enthusiast. Join us on a journey of discovery
-          and exploration as we unveil the hidden gems of Lijiang's most famous
-          spots.
-        </p>
-        <button class="showMore">Show me more</button>
-      </div>
-    </div>
+    <script
+    type="text/javascript"
+    src="../resources/js/homePage.js/jquery-3.0.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../resources/js/homePage.js/bootstrap.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../resources/js/homePage.js/base.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../resources/js/homePage.js/index.js"
+  ></script>
 
-    <div class="main">
-      <ul class="main-ul">
-        <li>
-          <div class="item">
-            <div class="left">
-              <img src="../imgs/mspot/m2.jpg" alt="" />
-            </div>
-            <div class="right">
-              <div class="right-tit">
-                Experience the Tibetan costumes in Lijiang
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="../resources/js/bootstrap.bundle.js"></script>
+        <script src="../resources/js/jquery.min.js"></script>
+        <script src="../resources/js/wow.js"></script>
+
+        <title>Navbar</title>
+        <style>
+            *
+            {
+                padding:0;
+                margin:0;
+                box-sizing:border-box;
+            }
+            a
+            {
+                text-decoration: none;
+                color:white;
+            }
+            ul
+            {
+                list-style:none;
+            }
+            .logo
+            {
+                font-size: 30px;
+                font-weight: 600;
+                padding-right: 530px;
+            }
+            .myheader
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                background-color:black;
+                padding: 10px 40px;
+            }
+            nav li
+            {
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            nav li a
+            {
+                color: #BDBDBD;
+                transition: all 0.3s ease;
+            }
+            nav li a:hover
+            {
+                color: white;
+            }
+            .reveal 
+            {
+            /* position: relative; */
+                transform: translateY(150px) scale(1.2, 1.2);
+                opacity: 0;
+                transition: 1s all ease;
+            }
+
+            .reveal.active 
+            {
+                transform: translateY(0) scale(1, 1);
+                opacity: 1;
+            }
+
+            @keyframes turn {
+                0% {
+                transform: rotate(0deg);
+            }
+
+                100% {
+                transform: rotate(360deg);
+            }
+
+            }
+            #back_top {
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        bottom: 50px;
+        right: 40px;
+        border-radius: 10px 10px 10px 10px;
+        text-decoration: none;
+        display: none;
+        background-color: #999999;
+    }
+
+    #back_top span {
+        display: block;
+        width: 60px;
+        color: #dddddd;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    #back_top span:hover {
+        color: #cccccc;
+    }
+            
+            
+            
+        </style>
+        
+        
+    </head>
+    <body> 
+       
+
+
+        <div id="navbar">
+            <div id="navMainPart">
+              <div id="navLeftContainer">
+                <img id="navIco" src="../imgs/icon/icon_yellow.png" />
+                <a id="navTitle" href="../index.html">LiJiang</a>
               </div>
-              <p>
-                Lijiang City is located in the famous confluence of Yunnan,
-                Sichuan and Tibetan cultures, where many cultures coexist and
-                many ethnic groups live in harmony, giving birth to a rich and
-                colorful and magical national culture.
+      
+              <div id="navRightContainer">
+                <nav>
+                  <li>
+                    <a href="mspot.html" id="mspot">Spots</a>
+                  </li>
+                  <li>
+                    <a href="scenery.html">Sceneries</a>
+                  </li>
+                  <li>
+                    <a href="investment.html">Investment</a>
+                  </li>
+                  <li>
+                    <a href="food.html">Foods</a>
+                  </li>
+                </nav>
+              </div>
+            </div>
+            <div id="navUnderline"></div>
+          </div>
+        <script lang="javascript">
+            let url = window.location.pathname;
+            url = url.substring(url.lastIndexOf('/') + 1, url.length - 5);
+            document.getElementById(url).style.fontWeight = 'bold'
+            document.getElementById(url).style.textDecorationLine = 'underline'
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+        
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+        
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+        
+            window.addEventListener("scroll", reveal);
+        
+        </script>
+        <div id="content">
+            <div id="parallax-header">
+              <p id="title">
+                Discover the Opportunities of Lijiang's Growing Economy
               </p>
+            </div>
+      
+            <div id="banner1">
+              <p id="bannerTitle">
+                Lijiang offers favorable investment opportunities
+              </p>
+              <p id="bannerText">
+                Lijiang offers investors a range of advantages, including a strategic
+                location, a well-developed infrastructure, and a growing economy. The
+                city is situated in a key location in Southwest China, with easy
+                access to major transportation hubs and trade routes. It boasts a
+                modern and efficient transportation network, including an
+                international airport and high-speed railway lines. Lijiang's economy
+                is also on the rise, with a strong focus on tourism, agriculture, and
+                high-tech industries. The local government has implemented favorable
+                policies to encourage investment and entrepreneurship, making it an
+                attractive destination for both domestic and foreign investors. With
+                its favorable location, infrastructure, and economic prospects,
+                Lijiang presents a promising investment opportunity for those seeking
+                to tap into China's growing market.
+              </p>
+              <button class="showMore">Show me more</button>
             </div>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="left">
-              <img src="../imgs/mspot/m3.jpg" alt="" />
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5 reveal active">
+                <div class="row gx-5 align-items-center" >
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">Experience the Tibetan costumes in Lijiang</h2>
+                        <p class="lead fw-normal text-muted mb-0">Lijiang City is located in the famous confluence of Yunnan, Sichuan and Tibetan cultures, where many cultures coexist and many ethnic groups live in harmony, giving birth to a rich and colorful and magical national culture. 
+                            Come to Lijiang to experience the colorful and strong Tibetan customs! 
+                            In a mysterious and ancient city, wearing Tibetan costumes can experience a strong visual feast.</p>
+                    </div>
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="../imgs/mspot/m1.png" alt="..." class="animated slideOutRight infinite"></div>
+                </div>
             </div>
-            <div class="right">
-              <p>
-                Come to Lijiang to experience the colorful and strong Tibetan
-                customs!
-              </p>
-              <p>
-                In a mysterious and ancient city, wearing Tibetan costumes can
-                experience a strong visual feast.
-              </p>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5 reveal active">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="../imgs/mspot/m3.png" alt="..." class="animated slideOutRight infinite"></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">Blue Moon Valley</h2>
+                        <p class="lead fw-normal text-muted mb-0">Located in Lijiang City, Yunnan Province. It is renowned worldwide for its towering and magnificent snowy mountains, azure jade like lake water, and majestic and beautiful canyon scenery. It is named for its azure lake water and crescent shaped valley. It is said to be the prototype of the Blue Moon Valley in the Lost Horizon written by British writer James Hilton.
+        The sun shines on the sparkling lake surface, making it even more beautiful at sunset. Blue Moon Valley can be said to be a must-have place to punch cards in Lijiang.</p>
+                        
+                    </div>
+                </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="left">
-              <img src="../imgs/mspot/m4.jpg" alt="" />
+        </section>
+        
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5 reveal active">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">Snow Mountain Art Town Fair</h2>
+                        <p class="lead fw-normal text-muted mb-0">An art and life resort, the town focuses on serving artists and people yearning for artistic life in Lijiang. 
+                            Living here is infinitely closer to art, without sacrificing the quality of life in the city. 
+                            There are artists and people who love art and life here. Here, Lijiang enjoys a slow life, embraces freedom, and neighbors art. Make art within the reach of urbanites, and let people live poetically in small towns.</p>
+                        
+                    </div>
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="../imgs/mspot/m7.png" alt="..." class="animated slideOutRight infinite"></div>
+                </div>
             </div>
-            <div class="right">
-              <div class="right-tit">Blue Moon Valley</div>
-              <p>
-                Located in Lijiang City, Yunnan Province. It is renowned
-                worldwide for its towering and magnificent snowy mountains,
-                azure jade like lake water, and majestic and beautiful canyon
-                scenery. It is named for its azure lake water and crescent
-                shaped valley. It is said to be the prototype of the Blue Moon
-                Valley in the Lost Horizon written by British writer James
-                Hilton.
-              </p>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5 reveal active">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="../imgs/mspot/m8.png" alt="..." class="animated slideOutRight infinite"></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">7 sea bar</h2>
+                        <p class="lead fw-normal text-muted mb-0">The 7 sea bar is the most suitable location for shooting snow capped mountains, with Yulong Snow Mountain and Baisha Ancient Town visible from the balcony on the second floor. 
+                            Drinking coffee warmly in the afternoon, watching the pedestrians passing downstairs and feeling the slow life of Baisha Ancient Town.
+                        </p>
+                        
+                    </div>
+                </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="left">
-              <img src="../imgs/mspot/m5.jpg" alt="" />
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5 reveal active">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">Sakura Restaurant</h2>
+                        <p class="lead fw-normal text-muted mb-0">Sakura Restaurant, a place known as the "succulent kingdom" that requires check-in. 
+                            The most suitable time for checking in is in the evening, when all the colorful lights in the restaurant are turned on, coupled with a feeling of smoke, as if you are in a fairyland on earth. 
+                            The interior decoration of the store integrates a colorful ethnic cultural atmosphere. 
+                            The dishes in the store are also very delicious, with many cuisines for everyone to choose from.
+                        </p>
+                        
+                    </div>
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="../imgs/mspot/m9.jpg" alt="..." class="animated slideOutRight infinite"></div>
+                </div>
             </div>
-            <div class="right">
-              <p>
-                The sun shines on the sparkling lake surface, making it even
-                more beautiful at sunset. Blue Moon Valley can be said to be a
-                must-have place to punch cards in Lijiang.
-              </p>
+        </section>
+        <footer id="about_us">
+            <div class="fixed_bg bg_3 footer_padding">
+              <div class="footnote container">
+                <div class="footnote_title">
+                  <div class="row footnote_title_content">
+                    <div class="col-md-2 col-title">
+                      <span>Contact </span><span>Us </span>
+                    </div>
+                    <div class="col-md-8">
+                      <form id="subForm" class="letter" method="post" action="">
+                        <span style="color: aliceblue;font-size: 25px;">Lijiang Municipal People's Government: 0888-5102066</span></br>
+                        <span style="color: aliceblue;font-size: 25px;">Lijiang Tourism Bureau: 0888-5158111</span></br>
+                        <span style="color: aliceblue;font-size: 25px;">Lijiang Public Security Bureau: 0888-5177110</span></br>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="left">
-              <img src="../imgs/mspot/m6.jpg" alt="" />
-            </div>
-            <div class="right">
-              <div class="right-tit">Snow Mountain Art Town Fair</div>
-              <p>
-                An art and life resort, the town focuses on serving artists and
-                people yearning for artistic life in Lijiang. Living here is
-                infinitely closer to art, without sacrificing the quality of
-                life in the city.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="left">
-              <img src="../imgs/mspot/m7.jpg" alt="" />
-            </div>
-            <div class="right">
-              <p>
-                There are artists and people who love art and life here. Here,
-                Lijiang enjoys a slow life, embraces freedom, and neighbors art.
-                Make art within the reach of urbanites, and let people live
-                poetically in small towns.
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="footer">
-      <div class="right-tit">
-        Click the following link to see more information for Lijiang if you have
-        any doubt
-      </div>
-      <p>
-        <a
-          href="https://baike.baidu.com/item/丽江市/3727097?fromtitle=丽江&fromid=121726&fr=aladdin"
-        >
-          https://baike.baidu.com/item/丽江市/3727097?fromtitle=丽江&fromid=121726&fr=aladdin
-        </a>
-      </p>
-    </div>
-  </body>
+          </footer>
+        <div id="article">
+            <a id="back_top"><span>⌆</span></a>
+        </div>
+        <script>
+            $(function () {
+                $(window).scroll(function () {  //只要窗口滚动,就触发下面代码 
+                    var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度 
+                    if (scrollt > 100) {  //判断滚动后高度超过100px,就显示  
+                        $("#back_top").fadeIn(400); //淡出     
+                    } else {
+                        $("#back_top").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动   
+                    }
+                });
+                $("#back_top").click(function () { //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+                    $("html,body").animate({ scrollTop: "0px" }, 200);
+                });
+            });
+            let localComments = JSON.parse(window.localStorage.comment ?? '[]')
+            function formatDate(time, format = 'YY-MM-DD hh:mm:ss') {
+                var date = new Date(time);
+        
+                var year = date.getFullYear(),
+                    month = date.getMonth() + 1,//月份是从0开始的
+                    day = date.getDate(),
+                    hour = date.getHours(),
+                    min = date.getMinutes(),
+                    sec = date.getSeconds();
+                var preArr = Array.apply(null, Array(10)).map(function (elem, index) {
+                    return '0' + index;
+                });
+        
+                var newTime = format.replace(/YY/g, year)
+                    .replace(/MM/g, preArr[month] || month)
+                    .replace(/DD/g, preArr[day] || day)
+                    .replace(/hh/g, preArr[hour] || hour)
+                    .replace(/mm/g, preArr[min] || min)
+                    .replace(/ss/g, preArr[sec] || sec);
+        
+                return newTime;
+            }
+            function setComments() {
+                const msgs = $('#msgs')
+                msgs.empty()
+                localComments.forEach(element => {
+                    const emailAddr = element.emailAddr
+                    const text = element.text
+                    const time = formatDate(element.time)
+                    msgs.append(`<div class="card w-50" style="margin: 0.5rem">
+                            <div class="card-header">
+                                ${emailAddr}
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">${text}</p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <div style="text-align: right;">${time}</div>
+                            </div>
+                        </div>`)
+                });
+            }
+            setComments()
+            function submitCmt() {
+                const email = $('#email').val()
+                const msg = $('#message').val()
+                if (!email || !msg) {
+                    (new bootstrap.Toast(document.getElementById('liveToast'))).show()
+                } else {
+                    localComments.push({ emailAddr: email, text: msg, time: Date.now() })
+                    window.localStorage.setItem("comment", JSON.stringify(localComments))
+                    setComments()
+                }
+            }
+
+        
+        </script>
+
+
+  
+
+
+    </body>
 </html>
