@@ -20,6 +20,7 @@ body{position: relative;min-width: 500px;background-color: rgba(255,255,197,0.2)
 .carousel-inner .item img{width: 100%;height: auto;}
 /*content-start*/
 .mian_content{padding: 60px 0;}
+.carouseltext{font-family: "Josefin Sans", sans-serif; font-size:xx-large;}
 .introduce_title{margin: 20px 0 30px;text-align: center;color: #bb7832;}
 .introduce_content{padding: 2rem 5rem;margin: 0 0 50px;}
 .introduce_txt{padding: 10px 0 20px;}
@@ -121,3 +122,18 @@ background-color: rgba(0,0,0,.6);border-radius: 2px;box-shadow: 0 1px 3px rgba(0
 .fixed_bg{ width:100%; background-position:bottom center; background-repeat:no-repeat; background-size:cover; min-height:100%; position:relative; z-index:1;}
 .bg_3{ background-image: url(../imgs/index/bg1.jpg);}
 .fixed_bg p{ margin: 0;} 
+
+/*torch and cangshan*/
+.fixed_bg{ background-attachment:fixed;}
+.fixed_bg{ width:100%; background-position:center center; background-repeat:no-repeat; background-size:cover; min-height:100%; position:relative; z-index:3;}
+.huoba_bg_3_top{ z-index: 1; background-image:url(../imgs/index/torchtop.jpg); }
+.cangshan_bg_3_top{ z-index: 1; background-image:url(../imgs/index/cangshantop.jpg); background-position:bottom center;}
+.fixed_bg p{ margin: 0;} 
+.content_article_top_pic {margin: 0 auto;text-align: center;}
+.content_article_top_pic p{margin: 1rem 2rem ;}
+.content_article_top_pic img{margin: 2rem 0 0 !important;}
+.title{margin: 4rem 0 1rem 0 ;}
+.header_bar{position: absolute;width: 100%;height: 70px;display: block;position: fixed;z-index: 2;}
+.pic{margin: 0 auto;display: inline-block;	}
+p.p_end{margin-bottom: 6rem;}
+.title{margin: 8rem 0 5rem;text-align: center;color: #bb7832;}

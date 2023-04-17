@@ -22,17 +22,15 @@
       type="text/javascript"
       src="../resources/js/homePage.js/base.js"
     ></script>
-    <script
-      type="text/javascript"
-      src="../resources/js/homePage.js/index.js"
-    ></script>
   </head>
 
   <body>
     <div id="navbar">
       <div id="navMainPart">
         <div id="navLeftContainer">
-          <img id="navIco" src="../imgs/icon/icon_yellow.png" />
+          <a href="../index.html"
+            ><img id="navIco" src="../imgs/icon/rect.png"
+          /></a>
           <a id="navTitle" href="../index.html">LiJiang</a>
         </div>
 
@@ -149,44 +147,56 @@
         </div>
       </div>
 
-      <div id="rotatingItem"></div>
+      <div class="marginBlock"></div>
       <div id="customMap">
-        <iframe id="theMap" src="map.html"></iframe>
-        <div id="mapButtons">
-          <button
-            class="places"
-            id="0"
-            onclick="changeFocus(id)"
-            style="background-image: url(../imgs/scenery/hutiaoxia.jpg)"
-          >
-            Tiger Leaping Gorge
-          </button>
-          <button
-            class="places"
-            id="1"
-            onclick="changeFocus(id)"
-            style="background-image: url(../imgs/scenery/heilongtan.jpg)"
-          >
-            Black Dragon Pool
-          </button>
-          <button
-            class="places"
-            id="2"
-            onclick="changeFocus(id)"
-            style="background-image: url(../imgs/scenery/mufu.jpg)"
-          >
-            Mufu Palace
-          </button>
-          <button
-            class="places"
-            id="3"
-            onclick="changeFocus(id)"
-            style="background-image: url(../imgs/scenery/bluemoonvalley.jpg)"
-          >
-            Blue Moon Valley
-          </button>
+        <div class="customMapTitle">
+          <p id="selectionHint">Select a place you want to visit!</p>
+        </div>
+        <div class="content">
+          <div id="leftContainer">
+            <iframe id="theMap" src="map.html"></iframe>
+          </div>
+          <div id="rightContainer">
+            <div id="mapButtons">
+              <button
+                class="places"
+                id="0"
+                onclick="changeFocus(id)"
+                style="background-image: url(../imgs/scenery/hutiaoxia.jpg)"
+              >
+                Tiger Leaping Gorge
+              </button>
+              <button
+                class="places"
+                id="1"
+                onclick="changeFocus(id)"
+                style="background-image: url(../imgs/scenery/heilongtan.jpg)"
+              >
+                Black Dragon Pool
+              </button>
+              <button
+                class="places"
+                id="2"
+                onclick="changeFocus(id)"
+                style="background-image: url(../imgs/scenery/mufu.jpg)"
+              >
+                Mufu Palace
+              </button>
+              <button
+                class="places"
+                id="3"
+                onclick="changeFocus(id)"
+                style="
+                  background-image: url(../imgs/scenery/bluemoonvalley.jpg);
+                "
+              >
+                Blue Moon Valley
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="marginBlock"></div>
     </div>
 
     <script>

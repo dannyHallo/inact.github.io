@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Index</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/mainpage.css" />
@@ -10,11 +9,11 @@
     <title>Homepage</title>
   </head>
 
-  <body >
+  <body>
     <div id="navbar">
       <div id="navMainPart">
         <div id="navLeftContainer">
-          <img id="navIco" src="imgs/icon/icon_yellow.png" />
+          <a href="index.html"><img id="navIco" src="imgs/icon/rect.png" /></a>
           <a id="navTitle" href="index.html">LiJiang</a>
         </div>
 
@@ -27,7 +26,7 @@
               <a href="html/scenery.html">Sceneries</a>
             </li>
             <li>
-              <a href="html/investment.html" id="investment">Investment</a>
+              <a href="html/investment.html">Investment</a>
             </li>
             <li>
               <a href="html/food.html">Foods</a>
@@ -38,7 +37,7 @@
       <div id="navUnderline"></div>
     </div>
 
-    <!--轮播图-->
+    <!--Carousel-->
     <section class="lunbotu">
       <div
         id="carousel-example-generic"
@@ -61,32 +60,24 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="imgs/index/1.jpg" alt="" />
-            <div class="carousel-caption">xuexi</div>
+            <video muted loop autoplay="autoplay" class="d-block w-100">
+              <source src="video/video2.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption">
+              <font class="carouseltext">The beauty in Lijiang</font>
+            </div>
           </div>
           <div class="item">
             <img src="imgs/index/2.jpg" alt="" />
-            <div class="carousel-caption">
-              <!--输入描述-->
-            </div>
           </div>
           <div class="item">
             <img src="imgs/index/3.jpg" alt="" />
-            <div class="carousel-caption">
-              <!--输入描述-->
-            </div>
           </div>
           <div class="item">
             <img src="imgs/index/4.jpg" alt="" />
-            <div class="carousel-caption">
-              <!--输入描述-->
-            </div>
           </div>
           <div class="item">
             <img src="imgs/index/5.jpg" alt="" />
-            <div class="carousel-caption">
-              <!--输入描述-->
-            </div>
           </div>
         </div>
 
@@ -118,9 +109,8 @@
       </div>
     </section>
 
-    <!--正文内容-->
+    <!--body content-->
     <section id="site" class="mian_content">
-      <!--正文简介-->
       <div class="introduce container">
         <h1 class="introduce_title title-font">Welcome to Lijiang</h1>
         <div class="introduce_content">
@@ -133,19 +123,6 @@
               place, in addition to the Han nationality, a total of 12 ethnic
               minorities, 22 kinds of ethnic minorities.
             </p>
-            <p>
-              Lijiang is the only prefecture level city in China with three
-              World Heritage sites at the same time. It is rich in tourism
-              resources, with 104 scenic spots, including Lijiang Ancient City,
-              Yulong Snow Mountain, Tiger Leaping-Gorge, Laojun Mountain, Shuhe
-              Ancient Town and other well-known tourist spots. It has been rated
-              as China's Top 100 tourism competitiveness cities, China's Top ten
-              leisure cities , China's Outstanding tourism cities, China's
-              top ten attractive cities and other honorary titles, and has been
-              successfully established as a national Garden City, a national
-              health city, and a national water-saving city. In 2021, Lijiang
-              achieved a regional GDP of 57.05 billion yuan.
-            </p>
           </div>
           <div class="introduce_btn">
             <a href="html/scenery.html" target="_blank">Into Lijiang</a>
@@ -153,128 +130,181 @@
         </div>
       </div>
 
-      <!--正文视频-->
+      <hr />
+
+      <!--Video-->
       <div class="video container">
         <div class="video_header">
-          <h1 class="video_tile litter_title_font">Lijiang video</h1>
+          <h1 class="video_tile litter_title_font">Discover Lijiang</h1>
         </div>
         <div class="video_content">
           <div class="row">
-            <div class="video_txt col-md-3">
-              <div class="video_txt_title">美丽丽江</div>
-              <div class="video_txt_content">
-                <p>
-                  xxxxxxxxx
-                </p>
+            <div class="video_play" style="max-width: 1200px; margin: 0 auto">
+              <div class="embed-responsive embed-responsive-16by9 video_img">
+                <video controls preload="metadata" poster="img/opacity.png">
+                  <source src="video/video2.mp4" type="video/mp4" />
+                </video>
               </div>
-              <a href="html/scenery.html" class="button_a" target="_blank"
+              <a href="html/mspot.html" class="button_a" target="_blank"
                 ><button class="video_txt_btn">Find More</button></a
               >
-              <!--<button class="video_txt_share">分享</button>-->
-            </div>
-
-            <div class="col-md-9">
-              <div class="video_play">
-                <div class="embed-responsive embed-responsive-16by9 video_img">
-                  <video
-                    controls
-                    preload="metadata"
-                    poster="imgs/index/opacity.png"
-                  >
-                    <source src="video/video1.mp4" type="video/mp4" />
-                  </video>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
 
-      
-
-      <!--图片区 -->
-      <div class="content_mian">
-        <div class="content_cultural">
-          <div class="row">
-            <div class="content_cultural_picture col-md-6">
-              <div class="content_cultural_picture_position">
-                <img
-                  src="imgs/index/plate1.jpg"
-                  class="img-responsive"
-                  alt="Responsive image"
-                />
-                <div class="content_cultural_picture_mask">
-                  <h3 class="content_cultural_picture_mask_txt">
-                    Scenery
-                  </h3>
-                  <a
-                    href="#"
-                    class="content_cultural_picture_mask_link"
-                    target="_blank"
-                  ></a>
+      <div class="content container">
+        <div class="content_mian">
+          <!--Picture天哥修改这里-->
+          <div class="content_cultural">
+            <div class="row">
+              <div class="content_cultural_picture col-md-6">
+                <div class="content_cultural_picture_position">
+                  <img
+                    src="imgs/index/plate1.jpg"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="content_cultural_picture_mask">
+                    <h3 class="content_cultural_picture_mask_txt">Scenery</h3>
+                    <a
+                      href="#"
+                      class="content_cultural_picture_mask_link"
+                      target="_blank"
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="content_cultural_video col-md-6">
-              <div class="content_cultural_picture_position">
-                <img
-                  src="imgs/index/plate2.jpg"
-                  class="img-responsive"
-                  alt="Responsive image"
-                />
-                <div class="content_cultural_picture_mask">
-                  <h3 class="content_cultural_picture_mask_txt">
-                    Mspots
-                  </h3>
-                  <a
-                    href="html/mspot.html"
-                    class="content_cultural_picture_mask_link"
-                    target="_blank"
-                  ></a>
+              <div class="content_cultural_video col-md-6">
+                <div class="content_cultural_picture_position">
+                  <img
+                    src="imgs/index/plate2.jpg"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="content_cultural_picture_mask">
+                    <h3 class="content_cultural_picture_mask_txt">Mspots</h3>
+                    <a
+                      href="html/mspot.html"
+                      class="content_cultural_picture_mask_link"
+                      target="_blank"
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="content_cultural">
-          <div class="row">
-            <div class="content_cultural_picture col-md-6">
-              <div class="content_cultural_picture_position">
-                <img
-                  src="imgs/index/plate3.jpg"
-                  class="img-responsive"
-                  alt="Responsive image"
-                />
-                <div class="content_cultural_picture_mask">
-                  <h3 class="content_cultural_picture_mask_txt">
-                    Food
-                  </h3>
-                  <a
-                    href="html/food.html"
-                    class="content_cultural_picture_mask_link"
-                    target="_blank"
-                  ></a>
+          <div class="content_cultural">
+            <div class="row">
+              <div class="content_cultural_picture col-md-6">
+                <div class="content_cultural_picture_position">
+                  <img
+                    src="imgs/index/plate3.jpg"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="content_cultural_picture_mask">
+                    <h3 class="content_cultural_picture_mask_txt">Food</h3>
+                    <a
+                      href="html/food.html"
+                      class="content_cultural_picture_mask_link"
+                      target="_blank"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="content_cultural_video col-md-6">
+                <div class="content_cultural_picture_position">
+                  <img
+                    src="imgs/index/plate4.jpg"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="content_cultural_picture_mask">
+                    <h3 class="content_cultural_picture_mask_txt">
+                      Investment
+                    </h3>
+                    <a
+                      href="html/investment.html"
+                      class="content_cultural_picture_mask_link"
+                      target="_blank"
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="content_cultural_video col-md-6">
-              <div class="content_cultural_picture_position">
-                <img
-                  src="imgs/index/plate4.jpg"
-                  class="img-responsive"
-                  alt="Responsive image"
-                />
-                <div class="content_cultural_picture_mask">
-                  <h3 class="content_cultural_picture_mask_txt">
-                    Investment
-                  </h3>
-                  <a
-                    href="html/investment.html"
-                    class="content_cultural_picture_mask_link"
-                    target="_blank"
-                  ></a>
+          </div>
+
+          <div class="content_article_bottom blow_up_img">
+            <div class="row">
+              <div class="content_article_bottom col-md-6">
+                <div style="overflow: hidden">
+                  <img
+                    src="imgs/index/6.jpg"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
                 </div>
+                <span>“Magnificent Cangshan”</span>
+                <div class="content_article_bottom_title">
+                  <h3>Cangshan</h3>
+                </div>
+                <div class="content_article_bottom_content">
+                  <p>
+                    Hsiangzhi saga 19 peak, from the north and south,
+                    continuous, towering in the west bank of Erhai Lake.
+                    Cangshan Mountain, the permanent master of the western
+                    Yunnan plateau, the favored child of heaven, which is hidden
+                    in the clouds and mist, appears particularly beautiful and
+                    majestic under the snow and ice. "Red day snow does not
+                    melt." Cangshan, with snow all year round, has a stream
+                    between every two peaks, flowing from top to bottom, along
+                    the east, slowly gathering, giving birth to the pearl of the
+                    plateau - Erhai Lake.
+                  </p>
+                </div>
+                <a href="html/cangshan.html" class="button_a" target="_blank"
+                  ><button class="content_article_bottom_btn">
+                    Find More
+                  </button></a
+                >
+              </div>
+
+              <div class="content_article_bottom col-md-6">
+                <div style="overflow: hidden">
+                  <img
+                    src="imgs/index/7.jpg"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                </div>
+                <span>Looking for the "original Yunnan"</span>
+                <div class="content_article_bottom_title">
+                  <h3>Torch Festival of Yi Nationality</h3>
+                </div>
+                <div class="content_article_bottom_content">
+                  <p>
+                    The Yi, Bai, Naxi, Hani, Lisu, Lahu, Pumi and other ethnic
+                    minorities in Yunnan have a common festival - Torch
+                    Festival. The Torch Festival of Yi nationality has the
+                    largest number of people, the largest scale and the highest
+                    popularity. It is also the most solemn festival of the Yi
+                    people. Torch Festival content program is: during the day
+                    people drink to celebrate the festival and wrestling,
+                    bullfighting activities. In Wuding County, Luqianjia County
+                    and other places, the Yi people also carry out archery,
+                    horse racing, swing and other activities.
+                  </p>
+                </div>
+                <a
+                  href="html/torchfestival.html"
+                  class="button_a"
+                  target="_blank"
+                  ><button class="content_article_bottom_btn">
+                    Find More
+                  </button></a
+                >
               </div>
             </div>
           </div>
@@ -284,7 +314,7 @@
 
     <hr />
 
-    <!--页脚信息--关于我们-->
+    <!--footer-->
     <footer id="about_us">
       <div class="fixed_bg bg_3 footer_padding">
         <div class="footnote container">
@@ -311,11 +341,11 @@
       </div>
     </footer>
 
-    <!--返回顶部组件-->
+    <!--backtop-->
     <div class="scrollSite">
       <a href="javascript:void(0)" class="scrollSite_btn"></a>
     </div>
-    <!--返回顶部组件-->
+    <!--backtop-->
   </body>
   <script
     type="text/javascript"

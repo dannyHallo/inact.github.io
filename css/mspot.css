@@ -196,3 +196,26 @@
   color: #b019b8;
   background-color: #ffffff;
 }
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-box .btn {
+  width: 24rem;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 3rem;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}

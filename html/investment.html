@@ -26,11 +26,6 @@
     type="text/javascript"
     src="../resources/js/homePage.js/base.js"
   ></script>
-  <script
-    type="text/javascript"
-    src="../resources/js/homePage.js/index.js"
-  ></script>
-
     <title>Investment</title>
   </head>
 
@@ -38,7 +33,9 @@
     <div id="navbar">
       <div id="navMainPart">
         <div id="navLeftContainer">
-          <img id="navIco" src="../imgs/icon/icon_yellow.png" />
+          <a href="../index.html"
+            ><img id="navIco" src="../imgs/icon/rect.png"
+          /></a>
           <a id="navTitle" href="../index.html">LiJiang</a>
         </div>
 
@@ -51,7 +48,7 @@
               <a href="scenery.html">Sceneries</a>
             </li>
             <li>
-              <a href="investment.html" id="investment">Investment</a>
+              <a href="investment.html">Investment</a>
             </li>
             <li>
               <a href="food.html">Foods</a>
@@ -61,12 +58,12 @@
       </div>
       <div id="navUnderline"></div>
     </div>
-
+    
     <script lang="javascript">
       let url = window.location.pathname;
       url = url.substring(url.lastIndexOf('/') + 1, url.length - 5);
-      document.getElementById(url).style.fontWeight = 'bold'
-      document.getElementById(url).style.textDecorationLine = 'underline'
+      document.getElementById(url).style.fontWeight = 'bold';
+      document.getElementById(url).style.textDecorationLine = 'underline';
       function reveal() {
           var reveals = document.querySelectorAll(".reveal");
 

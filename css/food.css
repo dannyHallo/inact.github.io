@@ -1,6 +1,6 @@
 @import url("https://fonts.font.im/css?family=Satisfy");
 @import url("https://fonts.font.im/css?family=Josefin+Sans");
-@import url('https://fonts.font.im/css?family=Kirang+Haerang');
+@import url("https://fonts.font.im/css?family=Kirang+Haerang");
 
 * {
   padding: 0;
@@ -14,7 +14,6 @@
   width: auto;
   background-color: #ffd966;
 }
-
 
 #content #message {
   height: 200px;
@@ -164,7 +163,6 @@
   overflow: hidden;
 } */
 
-
 #content #parallax-cards {
   height: 120vw;
   width: 100%;
@@ -241,7 +239,6 @@
   line-height: 2vw;
 }
 
-
 .showMore {
   height: 4vw;
   width: 20vw;
@@ -273,7 +270,6 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
-
 }
 
 #content #foodImg {

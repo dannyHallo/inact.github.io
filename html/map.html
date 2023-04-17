@@ -30,7 +30,7 @@
     <script>
       var markers = new Array();
       var currentMarker;
-      
+
       var markerLijiang = new AMap.Marker({
         icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_r.png",
         position: [100.225825, 26.85517],
@@ -69,7 +69,6 @@
 
       map.add(markerLijiang);
       var bounds = map.getBounds();
-      showToolBarRuler();
       function changeFocus(id) {
         // delete the current cursor
         if (currentMarker != null) {

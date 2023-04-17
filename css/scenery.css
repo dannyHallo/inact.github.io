@@ -10,7 +10,7 @@
 }
 
 #content {
-  height: 8000px;
+  height: fit-content;
   width: auto;
 
   display: flex;
@@ -205,30 +205,66 @@ i:nth-child(even) {
   line-height: 2vw;
 }
 
-#content #rotatingItem {
-  height: 50vh;
+#content .marginBlock {
+  height: 10vh;
   width: 100%;
-  background-color: #74b9ff;
+  /* background-color: #74b9ff; */
 }
 
 #content #customMap {
+  height: 100vh;
+  width: 100%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+#content #customMap .customMapTitle {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content #customMap .customMapTitle #selectionHint {
+  color: #74b9ff;
+  text-shadow: 0.2vw 0.2vw #ff8a8a;
+  font-size: 4vw;
+}
+
+#content #customMap .content {
   height: 80vh;
   width: 100%;
-  border-radius: 4vh;
-  position: relative;
-
+  text-align: center;
   display: flex;
+}
+
+#content #customMap .content #leftContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+#content #customMap .content #rightContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
 
 #content #customMap #theMap {
-  height: 80vh;
-  width: 60vw;
+  height: 79vh;
+  width: 50vw;
+  border-radius: 2vw;
   border: none;
+  box-shadow: 1vh 1vh 0 0 #e062e7;
 }
 
 #content #customMap #mapButtons {
+  height: 100%;
+  width: 40vw;
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -237,20 +273,19 @@ i:nth-child(even) {
 /* a type of button */
 .places {
   height: 20vh;
-  width: 40vw;
+  width: 100%;
 
   font-size: 3vw;
   color: #ffffff;
   background-position: center;
   background-size: cover;
   border: none;
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 .places:hover {
-  font-size: 4vw;
-  color: #fff6a3;
-  text-decoration: underline;
+  font-size: 3.5vw;
   height: 50%;
+  cursor: pointer;
 }
 
 /* a type of button */
@@ -275,4 +310,5 @@ i:nth-child(even) {
 .showMore:hover {
   color: #b019b8;
   background-color: #ffffff;
+  cursor: pointer;
 }
