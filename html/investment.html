@@ -8,24 +8,37 @@
     <link rel="stylesheet" href="../css/animate.css" />
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="../css/investment.css" />
-    <link rel="stylesheet" href="../css/mainpage.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/bookstrap.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      href="../css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../css/style.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../resources/js/bootstrap.bundle.js"></script>
     <script src="../resources/js/jquery.min.js"></script>
     <script src="../resources/js/wow.js"></script>
     <script
-    type="text/javascript"
-    src="../resources/js/homePage.js/jquery-3.0.0.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="../resources/js/homePage.js/bootstrap.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="../resources/js/homePage.js/base.js"
-  ></script>
+      type="text/javascript"
+      src="../resources/js/homePage.js/jquery-3.0.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../resources/js/homePage.js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../resources/js/homePage.js/base.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../resources/js/homePage.js/index.js"
+    ></script>
+
     <title>Investment</title>
   </head>
 
@@ -37,18 +50,20 @@
             ><img id="navIco" src="../imgs/icon/rect.png"
           /></a>
           <a id="navTitle" href="../index.html">LiJiang</a>
+          <a class="bc" id="bc0" href="../index.html">Home/</a>
+          <a class="bc" id="bc1" href="investment.html">Investment/</a>
         </div>
 
         <div id="navRightContainer">
           <nav>
             <li>
-              <a href="mspot.html">Spots</a>
+              <a href="mspot.html" id="mspot">Spots</a>
             </li>
             <li>
               <a href="scenery.html">Sceneries</a>
             </li>
             <li>
-              <a href="investment.html">Investment</a>
+              <a href="investment.html" id="investment">Investment</a>
             </li>
             <li>
               <a href="food.html">Foods</a>
@@ -58,12 +73,12 @@
       </div>
       <div id="navUnderline"></div>
     </div>
-    
+
     <script lang="javascript">
       let url = window.location.pathname;
       url = url.substring(url.lastIndexOf('/') + 1, url.length - 5);
-      document.getElementById(url).style.fontWeight = 'bold';
-      document.getElementById(url).style.textDecorationLine = 'underline';
+      document.getElementById(url).style.fontWeight = 'bold'
+      document.getElementById(url).style.textDecorationLine = 'underline'
       function reveal() {
           var reveals = document.querySelectorAll(".reveal");
 
@@ -84,7 +99,10 @@
     </script>
 
     <div id="content">
-      <div id="parallax-header">
+      <div
+        id="parallax-header"
+        style="background-image: url(../imgs/investment/lijiangbackground.jpg)"
+      >
         <p id="title">
           Discover the Opportunities of Lijiang's Growing Economy
         </p>
@@ -113,12 +131,12 @@
       </div>
     </div>
 
-    <section class="py-5 bg-light" >
-      <div class="container px-5 my-5 reveal active" >
-        <div class="row gx-5 align-items-center" >
-          <div class="col-lg-6" >
-            <h2 class="fw-bolder" >Fantastic natural environment</h2>
-            <p class="lead fw-normal text-muted mb-0" >
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Fantastic natural environment</h2>
+            <p class="lead fw-normal text-muted mb-0">
               As the only city in China with three world heritages, Lijiang
               regards its tourism industry as the pride of the city. Located at
               the junction of the Yunnan-Guizhou Plateau and Qinghai Tibet
@@ -129,7 +147,7 @@
               industry investors.
             </p>
           </div>
-          <div class="col-lg-6" >
+          <div class="col-lg-6">
             <img
               class="img-fluid rounded mb-5 mb-lg-0"
               src="../imgs/investment/water.jpg"
@@ -258,13 +276,33 @@
         </div>
       </div>
     </section>
-    <div class="container-full footer-newsletter py-5" style="background-color: aqua;">
-      <div class="container text-center">
-        <i class="dzt-text-red dzt dzt-48 dzt-newsletter-24"></i>
-          <p><h2>Stay informed. Our newsletter.</h2></p>
-          <a class="type-internal dzt-btn dzt-btn-red " target="_self" href="/en/newsletter.html" title="">Subscribe to newsletter</a>
+    <section class="section bg-gradient-primary">
+      <div
+        class="bg-overlay-img"
+        style="background-image: url(../imgs/investment/demos.png)"
+      ></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center">
+              <h1 class="text-white mb-4">
+                Come and build your future in Lijiang!
+              </h1>
+              <p class="text-white mb-5 font-size-16">
+                Unique natural environment, thriving ecological agriculture and
+                green industry, huge potential tourism, and healthy industrial
+                structure... In Lijiang, the wave of opportunities is
+                unstoppable.
+              </p>
+              <a href="#" class="btn btn-lg btn-light">Return to Top of Page</a>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
       </div>
-    </div>
+      <!-- end container -->
+    </section>
     <footer id="about_us">
       <div class="fixed_bg bg_3 footer_padding">
         <div class="footnote container">
@@ -275,9 +313,15 @@
               </div>
               <div class="col-md-8">
                 <form id="subForm" class="letter" method="post" action="">
-                  <span style="color: aliceblue;font-size: 25px;">Lijiang Municipal People's Government: 0888-5102066</span></br>
-                  <span style="color: aliceblue;font-size: 25px;">Lijiang Tourism Bureau: 0888-5158111</span></br>
-                  <span style="color: aliceblue;font-size: 25px;">Lijiang Public Security Bureau: 0888-5177110</span></br>
+                  <span style="color: aliceblue; font-size: 25px"
+                    >Lijiang Municipal People's Government: 0888-5102066</span
+                  >
+                  <span style="color: aliceblue; font-size: 25px"
+                    >Lijiang Tourism Bureau: 0888-5158111</span
+                  >
+                  <span style="color: aliceblue; font-size: 25px"
+                    >Lijiang Public Security Bureau: 0888-5177110</span
+                  >
                 </form>
               </div>
             </div>
@@ -362,6 +406,30 @@
           setComments();
         }
       }
+
+      function genParticles() {
+        var count = 5;
+        var container = document.querySelector("#banner1");
+        var i = 0;
+        while (i < count) {
+          var particle = document.createElement("i");
+          var size = Math.random() * window.innerWidth * 0.3;
+          var width = 1 + size;
+          var height = 1 + size;
+          var x = Math.floor(Math.random() * (container.offsetWidth - width));
+          var y = Math.floor(Math.random() * (container.offsetHeight - height));
+          particle.style.left = x + "px";
+          particle.style.top = y + "px";
+          particle.style.width = width + "px";
+          particle.style.height = height + "px";
+
+          particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+          container.appendChild(particle);
+          i++;
+        }
+      }
+
+      genParticles();
     </script>
   </body>
 </html>

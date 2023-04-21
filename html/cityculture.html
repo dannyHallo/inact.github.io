@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Investment</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/investment.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/bookstrap.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      href="../css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../css/style.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../resources/js/bootstrap.bundle.js"></script>
+    <script src="../resources/js/jquery.min.js"></script>
+    <script src="../resources/js/wow.js"></script>
+    <script
+      type="text/javascript"
+      src="../resources/js/homePage.js/jquery-3.0.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../resources/js/homePage.js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../resources/js/homePage.js/base.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../resources/js/homePage.js/index.js"
+    ></script>
+
+    <title>Investment</title>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <div id="navMainPart">
+        <div id="navLeftContainer">
+          <a href="../index.html"
+            ><img id="navIco" src="../imgs/icon/rect.png"
+          /></a>
+          <a id="navTitle" href="../index.html">LiJiang</a>
+          <a class="bc" id="bc0" href="../index.html">Home/</a>
+          <a class="bc" id="bc1" href="cityculture.html">City Culture/</a>
+        </div>
+
+        <div id="navRightContainer">
+          <nav>
+            <li>
+              <a href="mspot.html" id="mspot">Spots</a>
+            </li>
+            <li>
+              <a href="scenery.html">Sceneries</a>
+            </li>
+            <li>
+              <a href="investment.html" id="investment">Investment</a>
+            </li>
+            <li>
+              <a href="food.html">Foods</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+      <div id="navUnderline"></div>
+    </div>
+
+    <script lang="javascript">
+      let url = window.location.pathname;
+      url = url.substring(url.lastIndexOf('/') + 1, url.length - 5);
+      document.getElementById(url).style.fontWeight = 'bold'
+      document.getElementById(url).style.textDecorationLine = 'underline'
+      function reveal() {
+          var reveals = document.querySelectorAll(".reveal");
+
+          for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+
+              if (elementTop < windowHeight - elementVisible) {
+                  reveals[i].classList.add("active");
+              } else {
+                  reveals[i].classList.remove("active");
+              }
+          }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
+
+    <section>
+      <div class="fixed_bg cangshan_bg_3_top fixed_bg_top">
+        <p style="padding-top: 35rem"></p>
+      </div>
+    </section>
+
+    <div class="title title-font">
+      <h1 style="font-size: xx-large;">City culture in Lijiang</h1>
+    </div>
+
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Lijiang Gule</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              Lijiang Ancient music, commonly known as Naxi ancient music, is the ancient music remains of 
+              Lijiang Dayan ancient city and its surrounding Naxi settlements. It is composed of three parts: 
+              Bongshi Xili (Chinese translation: Baisha Xile), Lijiang Cave music and ritual music. Its music 
+              is mainly composed of instrumental music ensembles, and there are also songs and dance songs. 
+              Playing the broken stone fine miles of Musical Instruments are tartar pipe, Bobo, Sugudu, Erhuang, 
+              Huqin and so on.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/index/gulue.jpg"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/index/ceremany.jpg"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Dongba Ceremony</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              Dongba religion of Naxi nationality is a transitional religion from primitive 
+              religion of Naxi nationality to artificial religion. As many as 30 kinds of 
+              Dongba rituals are the main carrier of Naxi Dongba culture, that is, the contents 
+              recorded in the Dongba scriptures with pictoglyphs are expressed through various 
+              religious rituals and passed down by religious rituals. These rituals try to explain 
+              the contradiction between man and nature and man and society, which are closely related 
+              to the production and life of the Naxi ancestors and contain rich cultural connotations. 
+              Among them, Sacrifices to Heaven, Sacrifices to wind, Sacrifices to Department and 
+              Sacrifices to Ding Bashuo are relatively representative rituals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5 reveal active">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Mural of Lijiang</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              Lijiang murals, also known as Baisha murals, are the crystallization 
+              of the economic prosperity of the lords in the Ming Dynasty, the 
+              absorption of other ethnic cultures, and the development of their 
+              own ethnic culture. These murals are distributed in more than ten 
+              temples in Baisha, Dayan town, Shuhe, Zhonghai, Yangxi, Xuesong and 
+              other villages and towns. They were completed from the Ming Dynasty 
+              to the Qianlong period of the Qing Dynasty. The murals are integrated 
+              with Han, Tibetan and Naxi cultures, and show the life stories of 
+              Tibetan Buddhism, Confucianism and Taoism. Baisha murals are unique 
+              in embracing all kinds of religious culture and art schools.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="../imgs/index/mural.jpg"
+              alt="..."
+              class="animated slideOutRight infinite"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <br/>
+    <br/>
+    
+    <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+        <div class="footnote container">
+          <div class="footnote_title">
+            <div class="row footnote_title_content">
+              <div class="col-md-2 col-title">
+                <span>Contact </span><span>Us </span>
+              </div>
+              <div class="col-md-8">
+                <form id="subForm" class="letter" method="post" action="">
+                  <span style="color: aliceblue; font-size: 25px"
+                    >Lijiang Municipal People's Government: 0888-5102066</span
+                  >
+                  <span style="color: aliceblue; font-size: 25px"
+                    >Lijiang Tourism Bureau: 0888-5158111</span
+                  >
+                  <span style="color: aliceblue; font-size: 25px"
+                    >Lijiang Public Security Bureau: 0888-5177110</span
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div id="article">
+      <a id="back_top"><span>⌆</span></a>
+    </div>
+    
+  </body>
+</html>

@@ -1,78 +1,10 @@
-@import url("https://fonts.font.im/css?family=Satisfy");
-@import url("https://fonts.font.im/css?family=Josefin+Sans");
-@import url("https://fonts.font.im/css?family=Kirang+Haerang");
-
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
 
-#content {
-  height: auto;
-  width: auto;
-
-  background-color: #ffd966;
-}
-
-#content #parallax-header {
-  height: 93vh;
-  width: 100%;
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  /*  this is where the magic happens:  */
-  background-attachment: fixed;
-  background-image: url(../imgs/mspot/m2.png);
-
-  background-position: center;
-  background-size: cover;
-
-  justify-content: center;
-  align-items: center;
-}
-
 #content #parallax-header #title {
-  font-size: 8vw;
   color: rgb(255, 164, 246);
   text-shadow: 0.3vw 0.3vw #181918;
-  font-family: "Satisfy", cursive !important;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#content #banner1 {
-  height: auto;
-  width: 100%;
-
-  padding-top: 8vw;
-  padding-bottom: 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#content #banner1 #bannerTitle {
-  font-size: 4vw;
-  font: bold;
-  color: #74b9ff;
-  text-shadow: 2px 2px #cd7cff;
-
-  padding-bottom: 40px;
-}
-
-#content #banner1 #bannerText {
-  height: auto;
-  width: 85%;
-  font-size: 1vw;
-  line-height: 2vw;
-  text-align: center;
-  margin-bottom: 5vw;
 }
 
 .header h1 {

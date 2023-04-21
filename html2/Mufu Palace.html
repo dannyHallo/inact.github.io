@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Mufu Palace</title>
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/nav.css" />
+   <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="navMainPart">
+         <div id="navLeftContainer">
+            <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+            <a id="navTitle" href="../index.html">LiJiang</a>
+            <a class="bc" id="bc0" href="../index.html">Home/</a>
+            <a class="bc" id="bc1" href="../html/scenery.html">Sceneries/</a>
+            <a class="bc" id="bc2" href="#">Mufu palace/</a>
+         </div>
+
+         <div id="navRightContainer">
+            <nav>
+               <li>
+                  <a href="../html/mspot.html" id="mspot">Spots</a>
+               </li>
+               <li>
+                  <a href="../html/scenery.html">Sceneries</a>
+               </li>
+               <li>
+                  <a href="../html/investment.html" id="investment">Investment</a>
+               </li>
+               <li>
+                  <a href="../html/food.html">Foods</a>
+               </li>
+            </nav>
+         </div>
+      </div>
+      <div id="navUnderline"></div>
+   </div>
+
+   <div id="content">
+      <div id="parallax-header" style="background-image: url(../imgs/scenery/mufu.jpg)"></div>
+
+      <div id="banner1">
+         <p id="bannerTitle">Mufu Palace</p>
+         <p id="bannerText">
+            Mufu is located at No. 49, Guangyuan Lane, Guanyi Street, Dayan Street, Gucheng District, Lijiang City,
+            Yunnan Province, with a land area of 30666.66 square meters.<br />
+            The Mufu fully reflects the style and temperament of the Central Plains architecture in the Ming Dynasty,
+            and at the same time retains the simple and rough style of the Central Plains buildings in the Tang and Song
+            Dynasties.<br />
+            The Mu Mansion embraces the ancient city. Along the central axis, according to the terrain, there are
+            Zhongyifang, Yimen, the former meeting hall, Wanjuan Building, Dharma Protector Hall, Guangbi Building,
+            Yuyin Building, Sanqing Hall, Side Hall, attic, stage, crossing street building, and home. <br />There are
+            15
+            buildings including courtyards, corridors, and palaces, with a total of 162 rooms, large and small.
+
+         </p>
+
+         <p id="bannerTitle">Must visit:</p>
+
+         <div id="parallax-cards">
+            <div class="verticalCardContainer">
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/yuyinlou.png" />
+                  <p class="cardTitle">Yuyin Building</p>
+                  <p class="cardDescription">
+                     Yuyin Building, a famous building in the back garden of the reservoir, was built by Tusi Muchu at
+                     the beginning of Yongle in Ming Dynasty. It is the place where the Mu family enshrined the
+                     emperor's throne and collected the edicts and inscriptions issued by the emperor to the Mu family
+                     from the early Ming Dynasty to the early Qing Dynasty.
+                  </p>
+               </div>
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/yishiting.png" />
+                  <p class="cardTitle">The meeting hall</p>
+                  <p class="cardDescription">
+                     The meeting hall is the palace of Mu's chieftain discussing politics and the center for the
+                     implementation of power. In front of the hall is a huge square, covered with colored stone slabs,
+                     spacious, clean and elegant. In the past, it was the place where the generals were inspected before
+                     the expedition, and it was also the place where the Mu family received the congratulations from the
+                     people.
+                  </p>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <script>
+      function genParticles() {
+         var count = 60;
+         var container = document.querySelector("#banner1");
+         var i = 0;
+         while (i < count) {
+            var particle = document.createElement("i");
+            var size = Math.random() * window.innerWidth * 0.06;
+            var width = size;
+            var height = size;
+            var x = Math.floor(Math.random() * (container.offsetWidth - width));
+            var y = Math.floor(Math.random() * (container.offsetHeight - height));
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+            particle.style.width = width + "px";
+            particle.style.height = height + "px";
+
+            particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+            container.appendChild(particle);
+            i++;
+         }
+      }
+
+      genParticles();
+   </script>
+   <!--footer-->
+   <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+         <div class="footnote container">
+            <div class="footnote_title">
+               <div class="row footnote_title_content">
+                  <div class="col-md-2 col-title">
+                     <span>Trip in </span><span>Lijiang </span>
+                  </div>
+                  <div class="col-md-8">
+                     <form id="subForm" class="letter" method="post" action="">
+                        <span class="letter_btn">
+                           <input type="text" class="form-control" placeholder="Your e-mail address" />
+                           <button class="letter_query">Buy ticket</button>
+                        </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

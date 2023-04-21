@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../css/animate.css" />
     <link rel="stylesheet" href="../css/mspot.css" />
     <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/common.css" />
 
-    <link rel="stylesheet" href="../css/mainpage.css" />
+    <link rel="stylesheet" href="../css/index.css" />
 
     <script
       type="text/javascript"
@@ -137,18 +138,20 @@
             ><img id="navIco" src="../imgs/icon/rect.png"
           /></a>
           <a id="navTitle" href="../index.html">LiJiang</a>
+          <a class="bc" id="bc0" href="../index.html">Home/</a>
+          <a class="bc" id="bc1" href="mspot.html">Spots/</a>
         </div>
 
         <div id="navRightContainer">
           <nav>
             <li>
-              <a href="mspot.html">Spots</a>
+              <a href="mspot.html" id="mspot">Spots</a>
             </li>
             <li>
               <a href="scenery.html">Sceneries</a>
             </li>
             <li>
-              <a href="investment.html">Investment</a>
+              <a href="investment.html" id="investment">Investment</a>
             </li>
             <li>
               <a href="food.html">Foods</a>
@@ -183,7 +186,10 @@
       window.addEventListener("scroll", reveal);
     </script>
     <div id="content">
-      <div id="parallax-header">
+      <div
+        id="parallax-header"
+        style="background-image: url(../imgs/mspot/m2.png)"
+      >
         <p id="title">The most instagrammable spots in Lijiang</p>
       </div>
 
@@ -199,7 +205,6 @@
           Competitiveness Cities, China's Top 10 Leisure Cities, China's
           Excellent Tourism Cities, and China's Top 10 Charming Cities.
         </p>
-        <button class="showMore">Show me more</button>
       </div>
     </div>
     <section class="py-5 bg-light">
@@ -450,6 +455,30 @@
           setComments();
         }
       }
+
+      function genParticles() {
+        var count = 5;
+        var container = document.querySelector("#banner1");
+        var i = 0;
+        while (i < count) {
+          var particle = document.createElement("i");
+          var size = Math.random() * window.innerWidth * 0.3;
+          var width = 1 + size;
+          var height = 1 + size;
+          var x = Math.floor(Math.random() * (container.offsetWidth - width));
+          var y = Math.floor(Math.random() * (container.offsetHeight - height));
+          particle.style.left = x + "px";
+          particle.style.top = y + "px";
+          particle.style.width = width + "px";
+          particle.style.height = height + "px";
+
+          particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+          container.appendChild(particle);
+          i++;
+        }
+      }
+
+      genParticles();
     </script>
   </body>
 </html>

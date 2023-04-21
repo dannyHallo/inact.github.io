@@ -34,7 +34,7 @@
   width: auto;
   height: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
@@ -44,7 +44,6 @@
   background-size: cover;
   transition: all 0.3s ease;
   display: flex;
-
 }
 
 #navbar #navLeftContainer #navIco:hover {
@@ -60,6 +59,20 @@
   margin-left: 2vw;
   transition: all 0.3s ease;
   text-decoration: none;
+  margin-right: 2vw;
+}
+
+#navbar #navLeftContainer .bc {
+  color: #636363;
+  font-size: 2vh;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+#navbar #navLeftContainer .bc:hover {
+  color: #171717;
+  font-size: 2vh;
+  text-decoration: underline;
 }
 
 #navbar #navRightContainer {
@@ -77,7 +90,7 @@
 
 #navbar nav li a {
   color: #3f3f3f;
-  transition: all 0.1s ease;
+  transition: all 0.4s ease;
   font-size: 2vh;
   text-decoration: none !important;
   font-weight: normal !important;

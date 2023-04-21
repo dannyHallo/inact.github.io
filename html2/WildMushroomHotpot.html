@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Wild Mushroom Hotpot</title>
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/nav.css" />
+   <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="navMainPart">
+         <div id="navLeftContainer">
+            <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+            <a id="navTitle" href="../index.html">LiJiang</a>
+            <a class="bc" id="bc0" href="../index.html">Home/</a>
+            <a class="bc" id="bc1" href="../html/food.html">Foods/</a>
+            <a class="bc" id="bc2" href="#">Wild Mushroom Hotpot/</a>
+         </div>
+
+         <div id="navRightContainer">
+            <nav>
+               <li>
+                  <a href="../html/mspot.html" id="mspot">Spots</a>
+               </li>
+               <li>
+                  <a href="../html/scenery.html">Sceneries</a>
+               </li>
+               <li>
+                  <a href="../html/investment.html" id="investment">Investment</a>
+               </li>
+               <li>
+                  <a href="../html/food.html">Foods</a>
+               </li>
+            </nav>
+         </div>
+      </div>
+      <div id="navUnderline"></div>
+   </div>
+
+   <div id="content">
+      <div id="parallax-header" style="background-image: url(../imgs/food/3.jpg)"></div>
+
+      <div id="banner1">
+         <p id="bannerTitle">Wild Mushroom Hotpot</p>
+         <p id="bannerText">
+            Wild Mushroom Hot Pot is a unique delicacy in Yunnan. Chuxiong Wild Mushroom Hot Pot is one of the six
+            famous foods in Yunnan. The ingredients are ecological and delicious, and it is the favorite of countless
+            diners. Yunnan's complex topography, diverse forest types, soil types, and unique three-dimensional climate
+            conditions have bred a wealth of wild edible fungus resources, with many types, wide distribution, and large
+            yields.<br />
+            Wild mushrooms are unique wild edible mushrooms in Yunnan Province. They grow in a three-dimensional climate
+            with complex topography and landforms at an altitude of 2000-4000 meters. Wild edible fungi in Yunnan are
+            divided into two classes, eleven orders, thirty-five families, ninety-six genera, and about 250 species,
+            accounting for more than half of the world's edible fungi and one-third of China's edible fungi two.
+            In September 2018, it was rated as one of the top ten classic dishes of Yunnan in "Chinese Cuisine".
+
+         </p>
+
+         <div id="parallax-cards">
+            <div class="verticalCardContainer">
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/mogu1.png" />
+                  <p class="cardTitle">Cooking methods</p>
+                  <p class="cardDescription">
+                     Slaughter the hen, dissect off the viscera, wash it, chop it into 2 cm chicken pieces, put it in a
+                     pan with chicken oil, eggs, and chicken gizzards, add water to boil to remove the blood foam,
+                     change the water, add ginger pieces, and stew until chopsticks can be inserted into the chicken.
+                     Add salt , Wild Mushroom Chicken Soup Hot Pot Base, Pepper Noodles, and Scallions can be cooked
+                     together with various wild mushrooms.
+                  </p>
+               </div>
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/mogu2.png" />
+                  <p class="cardTitle">Nutritional value:</p>
+                  <p class="cardDescription">
+                     The wild mushroom hot pot soup base is slightly cloudy, but it tastes delicious, much more fragrant
+                     than it smells, and it also has health benefits such as calcium supplementation. Fungi plants
+                     concentrate the essence of the earth, rich in amino acids, multivitamins, folic acid, lactic acid
+                     and other substances, which can promote human metabolism, regulate human physiological functions,
+                     and enhance immunity.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script>
+      function genParticles() {
+         var count = 60;
+         var container = document.querySelector("#banner1");
+         var i = 0;
+         while (i < count) {
+            var particle = document.createElement("i");
+            var size = Math.random() * window.innerWidth * 0.06;
+            var width = size;
+            var height = size;
+            var x = Math.floor(Math.random() * (container.offsetWidth - width));
+            var y = Math.floor(Math.random() * (container.offsetHeight - height));
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+            particle.style.width = width + "px";
+            particle.style.height = height + "px";
+
+            particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+            container.appendChild(particle);
+            i++;
+         }
+      }
+
+      genParticles();
+   </script>
+   <!--footer-->
+   <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+         <div class="footnote container">
+            <div class="footnote_title">
+               <div class="row footnote_title_content">
+                  <div class="col-md-2 col-title">
+                     <span>Trip in </span><span>Lijiang </span>
+                  </div>
+                  <div class="col-md-8">
+                     <form id="subForm" class="letter" method="post" action="">
+                        <span class="letter_btn">
+                           <input type="text" class="form-control" placeholder="Your e-mail address" />
+                           <button class="letter_query">Buy ticket</button>
+                        </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

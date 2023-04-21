@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Coated Tofu</title>
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/nav.css" />
+   <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="navMainPart">
+         <div id="navLeftContainer">
+            <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+            <a id="navTitle" href="../index.html">LiJiang</a>
+            <a class="bc" id="bc0" href="../index.html">Home/</a>
+            <a class="bc" id="bc1" href="../html/food.html">Foods/</a>
+            <a class="bc" id="bc2" href="#">Coated Tofu/</a>
+         </div>
+
+         <div id="navRightContainer">
+            <nav>
+               <li>
+                  <a href="../html/mspot.html" id="mspot">Spots</a>
+               </li>
+               <li>
+                  <a href="../html/scenery.html">Sceneries</a>
+               </li>
+               <li>
+                  <a href="../html/investment.html" id="investment">Investment</a>
+               </li>
+               <li>
+                  <a href="../html/food.html">Foods</a>
+               </li>
+            </nav>
+         </div>
+      </div>
+      <div id="navUnderline"></div>
+   </div>
+
+   <div id="content">
+      <div id="parallax-header" style="background-image: url(../imgs/food/2.jpg)"></div>
+
+      <div id="banner1">
+         <p id="bannerTitle">Coated Tofu</p>
+         <p id="bannerText">
+            The tofu made by pointing with water from the underground well in Shiping overcomes the shortcomings of
+            using a single coagulant to make tofu, but it also combines the advantages of each single coagulant to
+            improve the dehydration and rancidity of the traditional coagulant. , The defect of unstable quality has
+            greatly improved the taste, quality, quality and safety of Shiping tofu. Unique in quality, tenderness,
+            deliciousness, and strong toughness, businessmen hold one end of the tofu and gently shake it to sell it
+            without breaking it. Shiping tofu is famous for its fineness and smoothness, strong chewing, unusual
+            fragrance and rich local flavor. After being baked and fried, the tofu gradually becomes smooth and plump,
+            and the color turns golden. When you break it open, you can see that the cooked tofu is densely covered with
+            pores and full of fragrance.
+
+         </p>
+
+         <div id="parallax-cards">
+            <div class="verticalCardContainer">
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/doufu1.png" />
+                  <p class="cardTitle">Cooking methods</p>
+                  <p class="cardDescription">
+                     1. Wash the tofu and dry it, and add an appropriate amount of base oil to the pot, and the amount
+                     of oil is a little more.<br />
+
+                     2. Fry the tofu until the surface is golden, remove it, and put it on oil-absorbing paper to absorb
+                     the oil on the surface.<br />
+                     3. Fry the peanuts in a frying pan.<br />
+                     4. Use a mortar to crush peanuts.<br />
+                     5. Put the tofu bubbles into a basin, and add millet hot rings.
+
+                  </p>
+               </div>
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/doufu2.png" />
+                  <p class="cardTitle">Nutritional value:</p>
+                  <p class="cardDescription">
+                     Shiping tofu is rich in protein and amino acids. It is a healthy ecological and nutritious green
+                     food. Moreover, tofu protein is a complete protein. It not only contains eight kinds of amino acids
+                     necessary for the human body, but its ratio is also close to the needs of the human body, and its
+                     nutritional value is high. After eating, it has the effects of decomposing excessive animal fat,
+                     detoxifying the liver, and beautifying the skin.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script>
+      function genParticles() {
+         var count = 60;
+         var container = document.querySelector("#banner1");
+         var i = 0;
+         while (i < count) {
+            var particle = document.createElement("i");
+            var size = Math.random() * window.innerWidth * 0.06;
+            var width = size;
+            var height = size;
+            var x = Math.floor(Math.random() * (container.offsetWidth - width));
+            var y = Math.floor(Math.random() * (container.offsetHeight - height));
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+            particle.style.width = width + "px";
+            particle.style.height = height + "px";
+
+            particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+            container.appendChild(particle);
+            i++;
+         }
+      }
+
+      genParticles();
+   </script>
+   <!--footer-->
+   <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+         <div class="footnote container">
+            <div class="footnote_title">
+               <div class="row footnote_title_content">
+                  <div class="col-md-2 col-title">
+                     <span>Trip in </span><span>Lijiang </span>
+                  </div>
+                  <div class="col-md-8">
+                     <form id="subForm" class="letter" method="post" action="">
+                        <span class="letter_btn">
+                           <input type="text" class="form-control" placeholder="Your e-mail address" />
+                           <button class="letter_query">Buy ticket</button>
+                        </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

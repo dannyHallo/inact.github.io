@@ -1,142 +1,20 @@
-@import url("https://fonts.font.im/css?family=Satisfy");
-@import url("https://fonts.font.im/css?family=Josefin+Sans");
-@import url("https://fonts.font.im/css?family=Kirang+Haerang");
-
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
 
-#content {
-  height: fit-content;
-  width: auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: #ffd966;
-}
-
-#content #parallax-header {
-  height: 93vh;
-  width: 100%;
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  /*  this is where the magic happens:  */
-  background-attachment: fixed;
-  background-image: url(../imgs/scenery/yulong.jpg);
-
-  background-position: center;
-  background-size: cover;
-
-  justify-content: center;
-  align-items: center;
-}
-
 #content #parallax-header #title {
-  font-size: 8vw;
   color: rgb(0, 3, 8);
   text-shadow: 0.3vw 0.3vw #ffffff;
-  font-family: "Satisfy", cursive !important;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#content #banner1 {
-  height: auto;
-  width: 100%;
-
-  padding-top: 8vw;
-  padding-bottom: 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-i {
-  position: absolute;
-  background: #ff2a2a;
-  opacity: 0.2;
-  border-radius: 25%;
-  animation: animate1 5s linear infinite;
-}
-
-i:nth-child(even) {
-  animation: animate2 5s linear infinite;
-}
-
-@keyframes animate1 {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.2;
-  }
-  90% {
-    opacity: 0.2;
-  }
-  100% {
-    transform: translateY(-50%) rotate(200deg);
-    opacity: 0;
-  }
-}
-
-@keyframes animate2 {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.2;
-  }
-  90% {
-    opacity: 0.2;
-  }
-  100% {
-    transform: translateY(50%) rotate(-200deg);
-    opacity: 0;
-  }
-}
-
-#content #banner1 #bannerTitle {
-  font-size: 4vw;
-  font: bold;
-  color: #74b9ff;
-  text-shadow: 2px 2px #cd7cff;
-  z-index: 1;
-
-  padding-bottom: 40px;
-}
-
-#content #banner1 #bannerText {
-  height: auto;
-  width: 85%;
-  z-index: 1;
-  font-size: 1vw;
-  line-height: 2vw;
-  text-align: center;
-  margin-bottom: 5vw;
 }
 
 #content #parallax-cards {
   height: 120vw;
   width: 100%;
-  display: flex;
 
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: space-evenly;
 
   /*  this is where the magic happens:  */
   background-attachment: fixed;
@@ -144,9 +22,6 @@ i:nth-child(even) {
 
   background-position: center;
   background-size: cover;
-
-  justify-content: space-evenly;
-  align-items: space-evenly;
 }
 
 #content #parallax-cards .verticalCardContainer {
@@ -266,8 +141,6 @@ i:nth-child(even) {
   width: 40vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* a type of button */
@@ -285,30 +158,5 @@ i:nth-child(even) {
 .places:hover {
   font-size: 3.5vw;
   height: 50%;
-  cursor: pointer;
-}
-
-/* a type of button */
-.showMore {
-  height: 4vw;
-  width: 20vw;
-
-  font-size: 2vw;
-  color: #ffffff;
-  background-color: #b019b8;
-  z-index: 5;
-
-  border-color: #000000;
-  border-width: 0.1vw;
-  border-radius: 2vw;
-
-  box-shadow: 0.2vw 0.3vw 0 0 #e062e7;
-  /* this makes the border color uniform */
-  /* border-style: solid; */
-  transition: all 0.6s ease;
-}
-.showMore:hover {
-  color: #b019b8;
-  background-color: #ffffff;
   cursor: pointer;
 }

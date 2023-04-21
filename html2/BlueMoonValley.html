@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Blue Moon Valley</title>
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/nav.css" />
+   <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="navMainPart">
+         <div id="navLeftContainer">
+            <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+            <a id="navTitle" href="../index.html">LiJiang</a>
+            <a class="bc" id="bc0" href="../index.html">Home/</a>
+            <a class="bc" id="bc1" href="../html/scenery.html">Sceneries/</a>
+            <a class="bc" id="bc2" href="#">Blue Moon Valley/</a>
+         </div>
+
+         <div id="navRightContainer">
+            <nav>
+               <li>
+                  <a href="../html/mspot.html" id="mspot">Spots</a>
+               </li>
+               <li>
+                  <a href="../html/scenery.html">Sceneries</a>
+               </li>
+               <li>
+                  <a href="../html/investment.html" id="investment">Investment</a>
+               </li>
+               <li>
+                  <a href="../html/food.html">Foods</a>
+               </li>
+            </nav>
+         </div>
+      </div>
+      <div id="navUnderline"></div>
+   </div>
+
+   <div id="content">
+      <div id="parallax-header" style="background-image: url(../imgs/scenery/bluemoonvalley.jpg)"></div>
+
+      <div id="banner1">
+         <p id="bannerTitle">Blue Moon Valley</p>
+         <p id="bannerText">
+            Blue Moon Valley is located at the eastern foot of Yulong Snow Mountain in Yulong Naxi Autonomous County,
+            Lijiang City, Yunnan Province, commonly known as "White Water River". Named for its crescent shape.
+            Blue Moon Valley is located in the valley north of Ganhaizi at the eastern foot of Yulong Snow Mountain and
+            south of Yunshanping. Its predecessor was the "Baishui River" known to people earlier.<br />
+            On sunny days, the color of the water is blue, and the valley is crescent-shaped. From a distance, it looks
+            like a blue moon inlaid at the foot of Jade Dragon Snow Mountain, so it is called Blue Moon Valley.
+            The name Baishui River is because the mud at the bottom of the lake is white, and the water will turn white
+            when it rains, so it is also called Baishui River.<br />
+            The river in the Blue Moon Valley was blocked by mountains during its flow, forming four large water
+            surfaces, known as Yuye Lake, Jingtan Lake, Blue Moon Lake and Tingtao Lake.
+
+
+         </p>
+
+         <p id="bannerTitle">Must visit:</p>
+
+         <div id="parallax-cards">
+            <div class="verticalCardContainer">
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/yuyehu.png" />
+                  <p class="cardTitle">Yuye Lake</p>
+                  <p class="cardDescription">
+                     The water quality of Yuye Lake is very clear. You can see the pure white bottom at a glance. The
+                     blue lake water reflects the Jade Dragon Snow Mountain not far away. The annual average temperature
+                     in the lake area is -4.0~-2.0℃, and the annual precipitation is about 100mm. The water of the lake
+                     is mainly supplied by a
+                     number of seasonal rivers formed by the melting water of Nari Snow Mountain.
+                  </p>
+               </div>
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/lanyuehu.png" />
+                  <p class="cardTitle">Lanyue Lake</p>
+                  <p class="cardDescription">
+                     Lanyue Lake is surrounded by green mountains and green trees. Under the bright sunshine, the
+                     jasper-like lake surface is shining like sapphires, giving people a feeling of immortality and
+                     fantasy. The poet wrote that "at sunrise, the river flowers are more red than fire, and in spring,
+                     the river water is as green as blue".
+                  </p>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <script>
+      function genParticles() {
+         var count = 60;
+         var container = document.querySelector("#banner1");
+         var i = 0;
+         while (i < count) {
+            var particle = document.createElement("i");
+            var size = Math.random() * window.innerWidth * 0.06;
+            var width = size;
+            var height = size;
+            var x = Math.floor(Math.random() * (container.offsetWidth - width));
+            var y = Math.floor(Math.random() * (container.offsetHeight - height));
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+            particle.style.width = width + "px";
+            particle.style.height = height + "px";
+
+            particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+            container.appendChild(particle);
+            i++;
+         }
+      }
+
+      genParticles();
+   </script>
+   <!--footer-->
+   <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+         <div class="footnote container">
+            <div class="footnote_title">
+               <div class="row footnote_title_content">
+                  <div class="col-md-2 col-title">
+                     <span>Trip in </span><span>Lijiang </span>
+                  </div>
+                  <div class="col-md-8">
+                     <form id="subForm" class="letter" method="post" action="">
+                        <span class="letter_btn">
+                           <input type="text" class="form-control" placeholder="Your e-mail address" />
+                           <button class="letter_query">Buy ticket</button>
+                        </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

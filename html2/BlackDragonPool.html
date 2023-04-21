@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Black Dragon Pool</title>
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/nav.css" />
+   <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="navMainPart">
+         <div id="navLeftContainer">
+            <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+            <a id="navTitle" href="../index.html">LiJiang</a>
+            <a class="bc" id="bc0" href="../index.html">Home/</a>
+            <a class="bc" id="bc1" href="../html/scenery.html">Sceneries/</a>
+            <a class="bc" id="bc2" href="#">Black Dragon Pool/</a>
+         </div>
+
+         <div id="navRightContainer">
+            <nav>
+               <li>
+                  <a href="../html/mspot.html" id="mspot">Spots</a>
+               </li>
+               <li>
+                  <a href="../html/scenery.html">Sceneries</a>
+               </li>
+               <li>
+                  <a href="../html/investment.html" id="investment">Investment</a>
+               </li>
+               <li>
+                  <a href="../html/food.html">Foods</a>
+               </li>
+            </nav>
+         </div>
+      </div>
+      <div id="navUnderline"></div>
+   </div>
+
+   <div id="content">
+      <div id="parallax-header" style="background-image: url(../imgs/scenery/heilongtan.jpg)"></div>
+
+      <div id="banner1">
+         <p id="bannerTitle">Black Dragon Pool</p>
+         <p id="bannerText">
+            Black Dragon Pool is a famous pond in the scenic Jade Spring Park (Yu Quan Gong Yuan) located at the foot of
+            Elephant Hill,<br /> a short walk north of the Old Town of Lijiang in Yunnan province, China. It was built
+            in 1737
+            during the Qing dynasty and offers views of the region's tallest mountain, Jade Dragon Snow Mountain, over
+            its white marble bridge.<br />
+
+            In the past, the pool itself has sometimes been dry, spoiling the famous view. In 2010, however, the park
+            was declared a water conservation area by the local government.<br /> As of 2014, the pool stands full of
+            water,
+            its former beauty restored.
+
+            The park features several smaller temples and pavilions.
+
+         </p>
+
+         <p id="bannerTitle">Must visit:</p>
+
+         <div id="parallax-cards">
+            <div class="verticalCardContainer">
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/deyuelou.png" />
+                  <p class="cardTitle">Deyue Tower</p>
+                  <p class="cardDescription">
+                     Deyue Tower is a pavilion-style building with triple eaves and pointed roofs. The base is
+                     octagonal, with three rooms in width and depth. The second and third floors are built with Ruyi
+                     bucket arches, and the four corners of the first floor are supported by eaves pillars and corner
+                     beams, and the corners are raised and winged. The paintings are colorful and the carvings are
+                     vivid.
+                  </p>
+               </div>
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/qiao.png" />
+                  <p class="cardTitle">Suocui Bridge</p>
+                  <p class="cardDescription">
+                     Suocui Bridge is a corridor-style wind and rain bridge built in the Jiaqing period of the Qing
+                     Dynasty. The eaves are raised and the green liquid is flying. There are ancient plaques of
+                     "Yangqing" and "Suocui" at the bridge head. Shake the tree and see the snow, before the rain falls
+                     on the crooked waves."
+                  </p>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <script>
+      function genParticles() {
+         var count = 60;
+         var container = document.querySelector("#banner1");
+         var i = 0;
+         while (i < count) {
+            var particle = document.createElement("i");
+            var size = Math.random() * window.innerWidth * 0.06;
+            var width = size;
+            var height = size;
+            var x = Math.floor(Math.random() * (container.offsetWidth - width));
+            var y = Math.floor(Math.random() * (container.offsetHeight - height));
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+            particle.style.width = width + "px";
+            particle.style.height = height + "px";
+
+            particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+            container.appendChild(particle);
+            i++;
+         }
+      }
+
+      genParticles();
+   </script>
+   <!--footer-->
+   <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+         <div class="footnote container">
+            <div class="footnote_title">
+               <div class="row footnote_title_content">
+                  <div class="col-md-2 col-title">
+                     <span>Trip in </span><span>Lijiang </span>
+                  </div>
+                  <div class="col-md-8">
+                     <form id="subForm" class="letter" method="post" action="">
+                        <span class="letter_btn">
+                           <input type="text" class="form-control" placeholder="Your e-mail address" />
+                           <button class="letter_query">Buy ticket</button>
+                        </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

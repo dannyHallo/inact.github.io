@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Steam Pot Chicken</title>
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/nav.css" />
+   <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="navMainPart">
+         <div id="navLeftContainer">
+            <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+            <a id="navTitle" href="../index.html">LiJiang</a>
+            <a class="bc" id="bc0" href="../index.html">Home/</a>
+            <a class="bc" id="bc1" href="../html/food.html">Food/</a>
+            <a class="bc" id="bc2" href="#">Steam Pot Chicken/</a>
+         </div>
+
+         <div id="navRightContainer">
+            <nav>
+               <li>
+                  <a href="../html/mspot.html" id="mspot">Spots</a>
+               </li>
+               <li>
+                  <a href="../html/scenery.html">Sceneries</a>
+               </li>
+               <li>
+                  <a href="../html/investment.html" id="investment">Investment</a>
+               </li>
+               <li>
+                  <a href="../html/food.html">Foods</a>
+               </li>
+            </nav>
+         </div>
+      </div>
+      <div id="navUnderline"></div>
+   </div>
+
+   <div id="content">
+      <div id="parallax-header" style="background-image: url(../imgs/scenery/qiguoji3.png)"></div>
+
+      <div id="banner1">
+         <p id="bannerTitle">Steam Pot Chicken</p>
+         <p id="bannerText">
+            The predecessor of steam pot is pottery hot pot. The predecessor of Steam Pot Chicken is Yanglin Chicken. In
+            the early years, Yunnan poplar forest. In Jianshui and other places, the precious medicinal material
+            Cordyceps sinensis is used to nestle chickens, which is called "Yanglin chicken", and the pottery hot pot
+            for stewing chicken is called "Yanglin pot". Yanglin pot is produced in Jianshui, and Jianshui pottery has a
+            history of more than one thousand years. <br />In the Qing Dynasty, Pan Jinhuai, a master potter, sintered
+            red,
+            yellow, purple, blue and white clay into colored pottery. In 1921, a potter named Xiang Fengchun inherited
+            his ancestral craftsmanship and created a steam pot for cooking. <br />In this way, "Steam Pot Chicken"
+            replaced
+            "Yanglin Chicken". Steam boilers are now mass-produced by Jianshui Arts and Crafts Pottery Factory in Yunnan
+            Province. People describe Jianshui pottery as "bright as water, bright as a mirror", "body like iron stone,
+            and sound like a chime".<br /> In the 1960s, when Premier Zhou visited abroad, he brought Jianshui purple
+            pottery
+            boilers and vases as gifts to foreign friends.The predecessor of steam pot is pottery hot pot. The
+            predecessor of Steam Pot Chicken is Yanglin Chicken.
+         </p>
+
+         <div id="parallax-cards">
+            <div class="verticalCardContainer">
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/qiguoji2.png" />
+                  <p class="cardTitle">Cooking methods</p>
+                  <p class="cardDescription">
+                     The tableware for steam pot chicken must be tasted in Jianshui earthenware steam pot. Jianshui
+                     steam pot has a simple shape and unique structure. It has an oblate belly and a hollow tube in the
+                     center. The steam enters the pot along this tube, and after being cooled by the steam pot cover, it
+                     turns into water and drips into the pot to become chicken soup. After two or three hours, the meat
+                     cake is ready to eat.
+                  </p>
+               </div>
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/qiguoji1.png" />
+                  <p class="cardTitle">Nutritional value:</p>
+                  <p class="cardDescription">
+                     Black-bone chicken is rich in melanin, protein, B vitamins and other 18 kinds of amino acids and 18
+                     kinds of trace elements. The content of cholesterol and fat is very low. The content of serum total
+                     protein and globular protein of black-bone chicken is significantly higher than that of ordinary
+                     chicken. It is higher than ordinary chicken, and the iron content is much higher than ordinary
+                     chicken.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script>
+      function genParticles() {
+         var count = 60;
+         var container = document.querySelector("#banner1");
+         var i = 0;
+         while (i < count) {
+            var particle = document.createElement("i");
+            var size = Math.random() * window.innerWidth * 0.06;
+            var width = size;
+            var height = size;
+            var x = Math.floor(Math.random() * (container.offsetWidth - width));
+            var y = Math.floor(Math.random() * (container.offsetHeight - height));
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+            particle.style.width = width + "px";
+            particle.style.height = height + "px";
+
+            particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+            container.appendChild(particle);
+            i++;
+         }
+      }
+
+      genParticles();
+   </script>
+   <!--footer-->
+   <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+         <div class="footnote container">
+            <div class="footnote_title">
+               <div class="row footnote_title_content">
+                  <div class="col-md-2 col-title">
+                     <span>Trip in </span><span>Lijiang </span>
+                  </div>
+                  <div class="col-md-8">
+                     <form id="subForm" class="letter" method="post" action="">
+                        <span class="letter_btn">
+                           <input type="text" class="form-control" placeholder="Your e-mail address" />
+                           <button class="letter_query">Buy ticket</button>
+                        </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

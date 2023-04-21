@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>The Torch Festival</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="navMainPart">
+      <div id="navLeftContainer">
+        <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+        <a id="navTitle" href="../index.html">LiJiang</a>
+        <a class="bc" id="bc0" href="../index.html">Home/</a>
+        <a class="bc" id="bc1" href="../html/scenery.html">Sceneries/</a>
+        <a class="bc" id="bc2" href="#">Tiger Leaping Gorge/</a>
+      </div>
+
+      <div id="navRightContainer">
+        <nav>
+          <li>
+            <a href="../html/mspot.html" id="mspot">Spots</a>
+          </li>
+          <li>
+            <a href="../html/scenery.html">Sceneries</a>
+          </li>
+          <li>
+            <a href="../html/investment.html" id="investment">Investment</a>
+          </li>
+          <li>
+            <a href="../html/food.html">Foods</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+    <div id="navUnderline"></div>
+  </div>
+
+  <div id="content">
+    <div id="parallax-header" style="background-image: url(../imgs/scenery/hutiaoxia.jpg)"></div>
+
+    <div id="banner1">
+      <p id="bannerTitle">Tiger Leaping Gorge</p>
+      <p id="bannerText">
+        Jade Dragon Snow Mountain is a majestic mountain range located in
+        Yunnan Province, China. It is part of the larger Hengduan Mountain
+        Range and is considered to be one of the most beautiful natural
+        attractions in the region. The mountain range gets its name from the
+        fact that it resembles a jade dragon lying in the snow. <br />The
+        mountain range spans over 550 square kilometers and has a peak
+        elevation of 5,596 meters. It is home to a diverse range of flora and
+        fauna, including many rare and endangered species. The mountain range
+        is also home to a number of ethnic minority groups, including the Naxi
+        people, who have a rich culture and history.<br />
+        Jade Dragon Snow Mountain is a popular destination for tourists who
+        come to enjoy the stunning natural beauty of the area, as well as to
+        participate in a range of outdoor activities such as hiking, skiing,
+        and horseback riding. The mountain range is also home to a number of
+        scenic spots, including the Blue Moon Valley, the Glacier Park, and
+        the Spruce Meadow.<br />
+        Overall, Jade Dragon Snow Mountain is a must-see destination for
+        anyone visiting Yunnan Province or China. Its stunning natural beauty
+        and rich cultural heritage make it a unique and unforgettable
+        experience for all who visit.
+      </p>
+
+      <div id="parallax-cards">
+        <div class="verticalCardContainer">
+          <div class="card">
+            <img class="cardImage" src="../imgs/scenery/shanghutiao.png" />
+            <p class="cardTitle">ShangHu Tiao</p>
+            <p class="cardDescription">
+              Shanghutiao is the narrowest section in the whole canyon, the river is only more than 20 meters wide. In
+              the center of the river sits a boulder, about 13 meters high. Legend has it that a tiger once jumped to
+              the opposite bank with this boulder. Because of the name "Tiger Leaping Rock", Tiger Leaping Gorge was
+              named after this. The boulder splits the torrent in two.
+            </p>
+          </div>
+          <div class="card">
+            <img class="cardImage" src="../imgs/scenery/heilongtan.jpg" />
+            <p class="cardTitle">XiaHu Tiao</p>
+            <p class="cardDescription">
+              The Jinsha River becomes much gentler in the lower section of the Tiger Leaping Section, and the thrill of
+              the canyon gradually disappears. The field of vision here is wide, and what you can see is fertile fields.
+              You can not only appreciate the scenes of the Jinsha River singing and dancing, three times and nine
+              turns, but also overlook the grace of the Jade Dragon Snow Mountain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function genParticles() {
+      var count = 60;
+      var container = document.querySelector("#banner1");
+      var i = 0;
+      while (i < count) {
+        var particle = document.createElement("i");
+        var size = Math.random() * window.innerWidth * 0.06;
+        var width = size;
+        var height = size;
+        var x = Math.floor(Math.random() * (container.offsetWidth - width));
+        var y = Math.floor(Math.random() * (container.offsetHeight - height));
+        particle.style.left = x + "px";
+        particle.style.top = y + "px";
+        particle.style.width = width + "px";
+        particle.style.height = height + "px";
+
+        particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+        container.appendChild(particle);
+        i++;
+      }
+    }
+
+    genParticles();
+  </script>
+  <!--footer-->
+  <footer id="about_us">
+    <div class="fixed_bg bg_3 footer_padding">
+      <div class="footnote container">
+        <div class="footnote_title">
+          <div class="row footnote_title_content">
+            <div class="col-md-2 col-title">
+              <span>Trip in </span><span>Lijiang </span>
+            </div>
+            <div class="col-md-8">
+              <form id="subForm" class="letter" method="post" action="">
+                <span class="letter_btn">
+                  <input type="text" class="form-control" placeholder="Your e-mail address" />
+                  <button class="letter_query">Buy ticket</button>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

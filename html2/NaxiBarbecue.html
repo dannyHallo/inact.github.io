@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Naxi Barbecue</title>
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/nav.css" />
+   <link rel="stylesheet" href="../css/common2.css" />
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="navMainPart">
+         <div id="navLeftContainer">
+            <a href="../index.html"><img id="navIco" src="../imgs/icon/rect.png" /></a>
+            <a id="navTitle" href="../index.html">LiJiang</a>
+            <a class="bc" id="bc0" href="../index.html">Home/</a>
+            <a class="bc" id="bc1" href="../html/food.html">Foods/</a>
+            <a class="bc" id="bc2" href="#">Naxi Barbecue/</a>
+         </div>
+
+         <div id="navRightContainer">
+            <nav>
+               <li>
+                  <a href="../html/mspot.html" id="mspot">Spots</a>
+               </li>
+               <li>
+                  <a href="../html/scenery.html">Sceneries</a>
+               </li>
+               <li>
+                  <a href="../html/investment.html" id="investment">Investment</a>
+               </li>
+               <li>
+                  <a href="../html/food.html">Foods</a>
+               </li>
+            </nav>
+         </div>
+      </div>
+      <div id="navUnderline"></div>
+   </div>
+
+   <div id="content">
+      <div id="parallax-header" style="background-image: url(../imgs/food/4.jpg)"></div>
+
+      <div id="banner1">
+         <p id="bannerTitle">Naxi Barbecue</p>
+         <p id="bannerText">
+            Naxi Barbecue is a popular dish from Yunnan. It's made by skewering meats, vegetables, and tofu, and then
+            grilling them over an open flame. The marinade is made with a variety of herbs and spices, giving the dish a
+            distinct flavor. It's often served with a side of sticky rice or noodles, and is a great option for those
+            looking for a quick and tasty meal while exploring the streets of Yunnan.<br />
+            "Naxi Barbecue" is the favorite of Naxi people. It is a traditional caravan dish popular on the Ancient Tea
+            Horse Road in Lijiang. Slowly roasted carefully. It can be baked directly or baked half-cooked and then
+            stored. When you want to eat it, you can deep-fry it and then add mint to fry it.
+
+         </p>
+
+         <div id="parallax-cards">
+            <div class="verticalCardContainer">
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/bbq2.png" />
+                  <p class="cardTitle">Eating method</p>
+                  <p class="cardDescription">
+                     Naxi barbecue looks oily and greasy, but it tastes golden and soft, the fat meat is fat but not
+                     greasy, and the lean meat is tender and fragrant.
+                     The local people's eating Naxi barbecue is also very characteristic, that is, it is served with
+                     mint, the red and white meat is embellished with green mint, which is pleasing to the eye, and the
+                     local special chili noodles are mixed with it. The taste is probably unforgettable for a long time.
+
+                  </p>
+               </div>
+               <div class="card">
+                  <img class="cardImage" src="../imgs/scenery/bbq1.png" />
+                  <p class="cardTitle">BBQ method:</p>
+                  <p class="cardDescription">
+                     The way of Naxi barbecue is very local. It uses an oven shaped like a water tank. A brazier filled
+                     with chestnut charcoal is placed at the bottom of the tank. A circle of hooks for hanging meat is
+                     tied with iron wires around the oven. Slowly and carefully roasted. It is very important to control
+                     the heat when grilling meat, it is better not to be burnt or tender.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script>
+      function genParticles() {
+         var count = 60;
+         var container = document.querySelector("#banner1");
+         var i = 0;
+         while (i < count) {
+            var particle = document.createElement("i");
+            var size = Math.random() * window.innerWidth * 0.06;
+            var width = size;
+            var height = size;
+            var x = Math.floor(Math.random() * (container.offsetWidth - width));
+            var y = Math.floor(Math.random() * (container.offsetHeight - height));
+            particle.style.left = x + "px";
+            particle.style.top = y + "px";
+            particle.style.width = width + "px";
+            particle.style.height = height + "px";
+
+            particle.style.animationDuration = 10 + Math.floor(size / 10) + "s";
+            container.appendChild(particle);
+            i++;
+         }
+      }
+
+      genParticles();
+   </script>
+   <!--footer-->
+   <footer id="about_us">
+      <div class="fixed_bg bg_3 footer_padding">
+         <div class="footnote container">
+            <div class="footnote_title">
+               <div class="row footnote_title_content">
+                  <div class="col-md-2 col-title">
+                     <span>Trip in </span><span>Lijiang </span>
+                  </div>
+                  <div class="col-md-8">
+                     <form id="subForm" class="letter" method="post" action="">
+                        <span class="letter_btn">
+                           <input type="text" class="form-control" placeholder="Your e-mail address" />
+                           <button class="letter_query">Buy ticket</button>
+                        </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
